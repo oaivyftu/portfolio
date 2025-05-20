@@ -15,6 +15,7 @@
     "@tabler/icons-react": "^3.33.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.10.5",
+    "gsap": "^3.13.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.28",
     "next-themes": "^0.4.6",
