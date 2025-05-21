@@ -15,9 +15,14 @@ const Hero = () => {
           <HeroText />
         </div>
         <section
-          className="flex flex-col justify-center text-white text-xl px-6">
-          <p className="mb-4">I’m Vincent, a trilingual (🇬🇧 English, 🇫🇷 French, 🇻🇳 Vietnamese) frontend engineer based in Ontario, Canada with 7 years of experience.</p>
-          <p className="mb-4">
+          className="flex flex-col justify-center text-white text-md px-6 leading-normal">
+          <h1 className="heading mb-5" style={{ textAlign: "left", lineHeight: 1.25 }}>
+            Hi there, I’m Vincent Le. <br />
+            Front End
+            <span className="text-purple"> Developer</span>, Conscientious Professional.
+          </h1>
+          <p className="mb-5">I&#39;m a trilingual (🇬🇧 English, 🇫🇷 French, 🇻🇳 Vietnamese) frontend engineer based in Ontario, Canada 🇨🇦 with 7 years of experience.</p>
+          <p className="mb-5">
             As I’ve grown as a developer, I’ve worked with many other senior developers, technical leaders, designers and learnt many lessons for both technical and soft skills. Therefore, day by day, year by year, every line of my code was becoming better and better, more scalable, readable and maintainable. However, I know there are always rooms for me to study and grow.
           </p>
           <p>

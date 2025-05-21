@@ -7,9 +7,16 @@ const RecentProjects = () => {
   return (
     <div className="py-20 " id="projects">
       <h1 className="heading">
-        A small selection of {' '}
-        <span className="text-purple">recent projects</span>
+        What I&#39;ve been working on
       </h1>
+      <p className="mb-4 leading-normal">
+        After 7 years of working across start-up and large corporate, I have worked on multiple projects.
+        <br/>
+        Most of these projects were internal or short-term MVPs designed to attract investment, so I don't have many links to showcase.
+
+        <br/>
+        There is only one public project that I can share. Additionally, I will showcase some side projects that I am currently working on.
+      </p>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div key={id} className="sm:h-[41rem] h-[32rem] sm:w-[570px] lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">

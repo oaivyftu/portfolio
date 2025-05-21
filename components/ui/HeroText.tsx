@@ -10,8 +10,7 @@ export default function HeroText() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 10]} />
         <Scene />
-        {/*<axesHelper scale={2} position={[0, 0, 0]} onUpdate={(self) => self.setColors('#ff2080', '#20ff80', '#2080ff')} />*/}
-        <OrbitControls enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} autoRotate autoRotateSpeed={2} />
+        <OrbitControls enableZoom={true} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI} autoRotate autoRotateSpeed={2} />
       </Canvas>
   )
 }
@@ -30,18 +29,18 @@ function Scene({ margin = 0.5 }) {
           letterSpacing={-0.06}
           size={0.45}
           font="/Inter_Bold.json">
-          {`Hi there!\nSalut, enchanté\nXin chào!`}
+          {`Hi there!\nSalut!\nXin chào!`}
           <meshStandardMaterial color="#ffffff"  />
         </Text3D>
-        <Center position={[-1.25, -0.98, 0]} rotation={[0, Math.PI, 0]}>
-          <Mac scale={2} />
+        <Center position={[-1.25, -0.5, 0]} rotation={[0, Math.PI, 0]}>
+          <Mac scale={3} />
         </Center>
       </Center>
     </>
   )
 }
 function Mac(props) {
-  const { scene } = useGLTF('/imac_computer.glb')
+  const { scene } = useGLTF('/my_imac.glb')
 
   return (
     <primitive object={scene} scale={1.5} {...props} />
