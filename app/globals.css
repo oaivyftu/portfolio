@@ -3,83 +3,168 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --background: 0 0% 100%;
-        --foreground: 240 10% 3.9%;
-
-        --card: 0 0% 100%;
-        --card-foreground: 240 10% 3.9%;
-
-        --popover: 0 0% 100%;
-        --popover-foreground: 240 10% 3.9%;
-
-        --primary: 240 5.9% 10%;
-        --primary-foreground: 0 0% 98%;
-
-        --secondary: 240 4.8% 95.9%;
-        --secondary-foreground: 240 5.9% 10%;
-
-        --muted: 240 4.8% 95.9%;
-        --muted-foreground: 240 3.8% 46.1%;
-
-        --accent: 240 4.8% 95.9%;
-        --accent-foreground: 240 5.9% 10%;
-
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 0 0% 98%;
-
-        --border: 240 5.9% 90%;
-        --input: 240 5.9% 90%;
-        --ring: 240 10% 3.9%;
-
-        --radius: 0.5rem;
-    }
-
-    .dark {
-        --background: 240 10% 3.9%;
-        --foreground: 0 0% 98%;
-
-        --card: 240 10% 3.9%;
-        --card-foreground: 0 0% 98%;
-
-        --popover: 240 10% 3.9%;
-        --popover-foreground: 0 0% 98%;
-
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
-
-        --secondary: 240 3.7% 15.9%;
-        --secondary-foreground: 0 0% 98%;
-
-        --muted: 240 3.7% 15.9%;
-        --muted-foreground: 240 5% 64.9%;
-
-        --accent: 240 3.7% 15.9%;
-        --accent-foreground: 0 0% 98%;
-
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-
-        --border: 240 3.7% 15.9%;
-        --input: 240 3.7% 15.9%;
-        --ring: 240 4.9% 83.9%;
-    }
-}
-
-@layer base {
-    * {
-        @apply border-border !scroll-smooth;
-    }
     body {
-        @apply bg-background text-foreground;
+        @apply text-primary dark:text-white;
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 400;
     }
     button {
         @apply active:outline-none;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        @apply block text-primary dark:text-white opacity-100 hover:text-secondary hover:opacity-90 transition-colors transition-opacity duration-200 ease-in-out underline;
+    }
+    h2 {
+        @apply my-[10px];
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+    h3 {
+        @apply my-[10px];
+        font-size: 30px;
+        line-height: 46px;
+        font-weight: 400;
+    }
+    h4 {
+        @apply my-[10px];
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 400;
+    }
+    blockquote {
+        @apply my-[25px] py-[15px] px-[30px] border-l-[5px] border-solid border-[#e2e2e2];
+        font-size: 20px;
+        line-height: 34px;
     }
 }
 
 @layer utilities {
     .heading {
-        @apply font-bold text-4xl md:text-5xl text-center;
+        @apply font-bold text-2xl text-primary dark:text-white;
+    }
+    .heading-jumbo {
+        margin-top: 10px;
+        font-size: 50px;
+        line-height: 64px;
+        text-transform: none;
+        @apply md:text-[56px] md:leading-[70px] lg:text-[64px] lg:leading-[80px];
+    }
+    .name-text {
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 400;
+    }
+    .paragraph-bigger {
+        opacity: 1;
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 400;
+    }
+    .paragraph-light {
+        opacity: 0.6;
+    }
+    .paragraph-small {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .paragraph-tiny {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .label {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &.cc-about-light {
+            opacity: 0.6;
+        }
+    }
+    .button {
+        padding: 12px 25px;
+        border-radius: 0px;
+        @apply bg-primary dark:bg-white text-white dark:text-primary hover:bg-secondary dark:hover:bg-primary hover:text-white dark:hover:text-secondary;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .button-large {
+        padding: 16px 35px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .rich-text {
+        width: 70%;
+        @apply mx-auto mb-[100px];
+        p {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            opacity: 0.6;
+        }
+    }
+    .navigation-item {
+        @apply no-underline px-[20px] py-[9px] text-xs leading-5 uppercase opacity-[0.6] transition-opacity text-center;
+        font-weight: 500;
+        color: #222222;
+        letter-spacing: 1px;
+        &.w--current {
+            @apply text-primary dark:text-white opacity-100;
+            font-weight: 600;
+        }
+    }
+    .section {
+        @apply mx-[15px] lg:mx-[30px];
+    }
+    .container {
+        text-align: center;
+        @apply mx-auto w-full max-w-[1140px] md:text-left;
+    }
+    .w-layout-grid {
+        @apply grid grid-cols-[1fr,1fr] grid-rows-[auto,auto];
+        grid-auto-columns: 1fr;
+    }
+    .works-grid {
+        @apply mb-[80px] gap-[30px] flex flex-col;
+        @apply lg:grid lg:grid-cols-[1.5fr,1fr,1.5fr] lg:grid-rows-[auto,auto];
+    }
+    .about-intro-grid {
+        @apply flex flex-col lg:grid lg:grid-rows-[auto] lg:grid-cols-[1fr,2fr] lg:gap-x-[80px] gap-y-[30px];
+        grid-template-areas: ". .";
+    }
+    .work-image {
+        @apply h-[460px] mb-10 bg-cover bg-center hover:opacity-80 transition-opacity;
+    }
+    .work-description {
+        @apply flex flex-col justify-center items-center;
+    }
+    .work-experience-grid {
+        @apply grid-cols-[1fr,1fr] gap-[30px];
+        grid-template-areas: ". .";
+        grid-template-rows: auto;
+        @apply lg:grid-cols-[1fr,1fr,1fr,1fr];
+    }
+    .skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 80px;
+        grid-row-gap: 10px;
+        margin-bottom: 140px;
+        @screen md {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@layer components {
+    .theme-toggle-wrapper {
+        @apply fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50;
     }
 }

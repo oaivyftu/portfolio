@@ -5,16 +5,55 @@ import { cn } from "@/utils/cn";
 
 export function TechStack() {
   return (
-    <div className="h-96 relative w-full overflow-hidden bg-slate-900 rounded-lg py-6 px-12">
-      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-
-      <Boxes />
-      <h1 className={cn("md:text-4xl text-xl text-white relative z-20 mb-4")}>
-        What I've been working on
-      </h1>
-      <p className="mb-4 relative z-20 leading-normal">
-
+    <div className="py-6">
+      <h2 className="heading mb-4">
+        My Skills
+      </h2>
+      <p className="mb-4 leading-normal w-1/2">
+        Here are skills I have accumulated during my bachelor degree, 7 years of Front-end development experience and 1 year of Network and Security Architecture post-graduate certificate:
       </p>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <ul className="flex-1 list-disc list-inside">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>LESS, SASS, SCSS</li>
+          <li>Bootstrap</li>
+          <li>Ant</li>
+          <li>Responsive design</li>
+          <li>UI Development</li>
+          <li>WordPress</li>
+          <li>SEO</li>
+          <li>GitHub</li>
+          <li>Version control systems</li>
+        </ul>
+        <ul className="flex-1 list-disc list-inside">
+          <li>Javascript</li>
+          <li>ECMAScript</li>
+          <li>Typescript</li>
+          <li>ReactJs</li>
+          <li>Redux</li>
+          <li>GraphQL</li>
+          <li>Node.js</li>
+          <li>REST</li>
+          <li>MVC</li>
+          <li>Unit testing</li>
+          <li>CMS (Content Management Systems)</li>
+          <li>jQuery</li>
+        </ul>
+        <ul className="flex-1 list-disc list-inside">
+          <li>Git</li>
+          <li>AWS</li>
+          <li>Jira</li>
+          <li>Scrum</li>
+          <li>Agile</li>
+          <li>Debugging</li>
+          <li>AJAX</li>
+          <li>Windows Server (Active Directory, GPO, client join domain)</li>
+          <li>Teamwork</li>
+          <li>Problem solving</li>
+          <li>Critical thinking</li>
+        </ul>
+      </div>
     </div>
   );
 }

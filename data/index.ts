@@ -1,205 +1,82 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
-
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
-
-export const projects = [
-  {
-    id: 1,
-    title: "The #1 platform to ace the TCF Canada",
-    des: "Master the TCF Canada with prettcf.com and unlock new doors of opportunity in Canada!",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://prettcf.com/",
-  },
-  {
-    id: 2,
-    title: "Đất Vàng Phú Quốc - The real estate platform for the Vietnamese market in Phu Quoc Island",
-    des: "Đất Vàng Phú Quốc is a company that provides real estate services and information in Phu Quoc City, Kien Giang Province.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://datvangphuquoc.com/",
-  },
-  {
-    id: 3,
-    title: "ImmoScout24: Real estate in Switzerland to buy and to rent",
-    des: "Buy & rent real estate, apartments and houses in Switzerland – Find attractive properties near you! Now online on immoscout24.ch.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://www.immoscout24.ch/en",
-  },
-  {
-    id: 4,
-    title: "The entrepreneurs’ best asset | Mantu",
-    des: "Mantu is an international global player providing guidance and services to businesses and entrepreneurs through its brands.",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://mantu.com/",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+import {Project} from "@/types";
 
 export const workExperience = [
   {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    company: "ELINEXT GROUP",
+    position: "Software Engineer",
+    period: "03/2016 – 03/2017",
   },
   {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    company: "MANTU GROUP",
+    position: "Frontend Engineer",
+    period: "03/2017 – 03/2019",
   },
   {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    company: "NFQ ASIA",
+    position: "Frontend Engineer",
+    period: "03/2019 – 03/2020",
   },
   {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    company: "Swiss Market Group",
+    position: "Senior Frontend Engineer",
+    period: "04/2020 – 01/2022",
   },
+  {
+    company: "GFT Technology Group",
+    position: "Senior Frontend Engineer",
+    period: "12/2021 – 05/2023",
+  },
+  {
+    company: "SINBYTE Digital Marketing",
+    position: "Web Developer and Digital Marketer",
+    period: "09/2023 – present",
+  }
 ];
+
+export const skills = [
+  "HTML", "CSS", "LESS, SASS, SCSS", "Bootstrap", "Ant", "Responsive design", "UI Development",
+  "WordPress", "SEO", "GitHub", "Version control systems", "Javascript", "ECMAScript",
+  "Typescript", "ReactJs", "Redux", "GraphQL", "Node.js", "Next.js", "Tailwind CSS", "REST", "MVC", "Unit testing",
+  "CMS (Content Management Systems)", "jQuery", "Git", "AWS", "Jira", "Scrum", "Agile",
+  "Debugging", "AJAX", "Windows Server (Active Directory, GPO, client join domain)",
+  "Teamwork", "Problem solving", "Critical thinking"
+];
+
+
+export const projects: { [key: string]: Project} = {
+  'immoscout24': {
+    id: 1,
+    type: "Fulltime Frontend",
+    title: "Real estate platform in Switzerland to buy and to rent",
+    img: "/immo_banner.png",
+    route: "/projects/immoscout24",
+    link: "https://www.immoscout24.ch/en",
+    desc: "Immoscout24 is a full-stack real estate platform that enables users to buy and rent properties across Switzerland. The application is built using modern technologies including ReactJS, Redux, TypeScript, JavaScript, NodeJS, ExpressJS, and .NET Core (C#). I collaborated as part of a distributed team of over 40 professionals—including developers, designers, QA engineers, product owners, and managers—spanning multiple European countries. My primary responsibility was to implement and enhance key UI components using React and TypeScript, ensuring a consistent, scalable, and responsive user experience across the platform.",
+    stacks: ["ReactJs", "Redux", "Styled-Components", "Design System", "Typescript", "Javascript"],
+    imgs: ["/immo_1.png", "/immo_2.png", "/immo_3.png", "/immo_4.png"],
+    purposeAndGoal: "This project included multiple modules and was developed by a large international team, divided into smaller squads. Each team was responsible for a specific domain or feature, such as the property listing page, search filters, or user authentication. My team focused on implementing and refining the UI for key customer-facing components. Thanks to the CI/CD pipeline, strict code conventions, and regular code reviews, the team was able to maintain consistent quality while scaling the app efficiently.",
+    explanation: "The application’s frontend was built using ReactJS and TypeScript to ensure component reusability, strong typing, and better developer experience. Redux was used for managing complex state interactions across views, while Styled-Components handled CSS-in-JS styling. On the backend, the application leveraged NodeJS and ExpressJS for APIs, and .NET Core (C#) for several microservices. I was mainly involved in implementing UI features, translating Figma designs into accessible, responsive React components, while enforcing consistency with the shared design system and TypeScript interfaces.",
+    problems: "One of the main challenges was maintaining consistency across different teams working on the same design system. I often had to refactor shared components to ensure they worked correctly in different contexts. Another challenge was handling complex property search filters efficiently, which involved syncing UI states with Redux without performance issues.",
+    lessons: "This project taught me the importance of team collaboration in large-scale systems. I learned how to align with other developers through code reviews, communicate with designers to clarify edge cases, and follow best practices for Git workflow in a multi-team environment. It also reinforced the importance of performance optimization when working on interactive UI components used by thousands of users.",
+    stackImg: "/immo_stack.png"
+  },
+  'prettcf': {
+    id: 2,
+    type: "Side Project",
+    title: "The platform to practice the French exam: TCF Canada",
+    img: "/prettcf_banner.png",
+    route: "/projects/prettcf",
+    link: "https://prettcf.com/",
+    desc: "Prettcf.com is an online platform built with WordPress for users to practice the TCF Canada French exam. I independently designed and developed the site with a focus on user experience and custom functionality through both WordPress plugins and custom code.",
+    stacks: ["WordPress", "JavaScript", "PHP", "CSS", "Elementor", "Tutor LMS"],
+    imgs: ["/prettcf_1.png", "/prettcf_2.png", "/prettcf_3.png", "/prettcf_4.png"],
+    purposeAndGoal: "The goal of this project was to create a practical platform to help French learners prepare for the TCF Canada exam. I wanted to provide a friendly, accessible interface where users could experience real test formats and track their progress over time.",
+    explanation: "I used WordPress as the main CMS and extensively configured plugins like Tutor LMS to build a complete learning system. I also applied custom CSS and PHP to tweak layouts, enhance responsiveness, and add interactivity. The design was fully customized with Elementor and hand-crafted assets including banners and logos to match the platform’s identity.",
+    problems: "Balancing plugin flexibility with custom requirements was challenging. Some design features and user interactions were not achievable through plugins alone, so I had to write custom JavaScript and PHP to meet those needs. Ensuring responsiveness and consistency across devices also required deep inspection and testing.",
+    lessons: "This project improved my understanding of WordPress as a development platform. I learned how to creatively extend its functionalities while maintaining performance. It also strengthened my frontend skills through real-world practice of CSS styling and visual design, and gave me confidence in managing full-stack responsibilities, even with limited backend needs.",
+    stackImg: "/prettcf_stack.png"
+  },
+}
 
 export const socialMedia = [
   {

@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "@/app/provider";
+import Header from "@/components/Header";
+import {cn} from "@/utils/cn";
+import ContactBox from "@/components/ContactBox";
+import Footer from "@/components/Footer";
+import MyExperience from "@/components/MyExperience";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vincent's Portfolio",
@@ -18,15 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.className}
+        className={cn(montserrat.className, "bg-white dark:bg-black")}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
+          disableTransitionOnChange={false}
         >
+          <Header />
           {children}
+          <ContactBox />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
