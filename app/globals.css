@@ -119,6 +119,9 @@
             @apply text-primary dark:text-white opacity-100;
             font-weight: 600;
         }
+        &.locale-nav-item {
+            @apply dark:text-[#222222];
+        }
     }
     .section {
         @apply mx-[15px] lg:mx-[30px];

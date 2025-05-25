@@ -1,0 +1,34 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "hero": {
+    "role": "Ingénieur Frontend",
+    "description": "Bonjour ! Je suis un ingénieur frontend trilingue 🇬🇧 🇫🇷 🇻🇳 basé en Ontario, Canada 🇨🇦"
+  },
+  "recentProjects": {
+    "title": "Ce sur quoi j'ai travaillé",
+    "description": "La plupart des projets sur lesquels j’ai travaillé étaient soit internes, soit des MVP à court terme visant à attirer des investissements, donc ils ne sont pas accessibles au public. Cependant, je suis ravi de partager un projet public ainsi que quelques projets personnels qui reflètent mes compétences et mon expérience."
+  },
+  "myExperiences": {
+    "title": "Mes expériences",
+    "description": "Au cours des 7 dernières années, j’ai travaillé en tant que développeur frontend pour des équipes internationales et des projets à grande échelle en Europe et en Asie. Mon expérience couvre des secteurs tels que l'immobilier, la banque et le marketing numérique — où j'ai contribué à la création d'interfaces utilisateur performantes et maintenables, ainsi qu'à des décisions clés en matière d'architecture. J’excelle dans les équipes interfonctionnelles et j’aime transformer des exigences produits complexes en expériences utilisateur fluides."
+  },
+  "contactBox": {
+    "title": "Envie de collaborer ?",
+    "description": "N'hésitez pas à me contacter si vous recherchez un développeur, avez une question ou souhaitez simplement échanger."
+  },
+  "footer": {
+    "copyright": "Ce site a été développé avec Next.js et Tailwind CSS par"
+  },
+  "about": {
+    "label": "salut !",
+    "title": "Je suis Vincent Le",
+    "description": "Avec plus de 7 ans d’expérience en développement frontend, je suis spécialisé dans la création de sites et d’applications web responsives en utilisant React, TailwindCSS et les standards modernes du web. J’aime résoudre les défis de design avec un code propre et une excellente expérience utilisateur. Ma mission est de créer des interfaces qui fonctionnent parfaitement et qui procurent de la joie aux utilisateurs."
+  },
+  "mySkills": {
+    "title": "Mes compétences",
+    "description": "En plus des compétences ci-dessous, je suis plusieurs cours en ligne tels que Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (pour le frontend). Je reproduis aussi certains sites connus comme StackOverflow, Jira, Spotify, ..."
+  }
+}

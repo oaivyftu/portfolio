@@ -2,16 +2,18 @@ import React from 'react';
 import {projects} from "@/data";
 import {cn} from "@/utils/cn";
 import Link from "next/link";
+import {useTranslations} from "next-intl";
 
 const RecentProjects = () => {
+  const t = useTranslations('recentProjects');
   return (
     <div className="section">
       <div className="container mb-10">
         <h2 className="mb-4">
-          What I&#39;ve been working on
+          {t('title')}
         </h2>
         <p className="leading-normal w-full lg:w-1/2 mb-4">
-          Most of the projects I’ve worked on were either internal or short-term MVPs aimed at attracting investment, so they are not publicly accessible. However, I’m excited to share one public project along with a few personal side projects that reflect my skills and experience.
+          {t('description')}
         </p>
       </div>
       <div className="w-layout-grid works-grid">

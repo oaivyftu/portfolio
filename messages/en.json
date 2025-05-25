@@ -1,0 +1,34 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About"
+  },
+  "hero": {
+    "role": "Frontend Engineer",
+    "description": "Hey there! I'm a trilingual \uD83C\uDDEC\uD83C\uDDE7 \uD83C\uDDEB\uD83C\uDDF7 \uD83C\uDDFB\uD83C\uDDF3 frontend engineer based in Ontario, Canada \uD83C\uDDE8\uD83C\uDDE6"
+  },
+  "recentProjects": {
+    "title": "What I've been working on",
+    "description": "Most of the projects I’ve worked on were either internal or short-term MVPs aimed at attracting investment, so they are not publicly accessible. However, I’m excited to share one public project along with a few personal side projects that reflect my skills and experience."
+  },
+  "myExperiences": {
+    "title": "My experiences",
+    "description": "Over the past 7 years, I’ve worked as a frontend developer for international teams and large-scale projects in Europe and Asia. My experience spans industries like real estate, banking, and digital marketing — where I helped build performant, maintainable UIs and contributed to core architecture decisions. I thrive in cross-functional teams and love turning complex product requirements into smooth user experiences."
+  },
+  "contactBox": {
+    "title": "Want to work together?",
+    "description": "Feel free to reach out if you're looking for a developer, have a question, or just want to connect"
+  },
+  "footer": {
+    "copyright": "This website is built with Next.js and Tailwind CSS by"
+  },
+  "about": {
+    "label": "hey there!",
+    "title": "I'm Vincent Le",
+    "description": "With over 7 years of experience in frontend development, I specialize in building responsive websites and web apps using React, TailwindCSS, and modern web standards. I enjoy solving design challenges with clean code and great UX. My mission is to build interfaces that not only work flawlessly but also bring joy to users."
+  },
+  "mySkills": {
+    "title": "My Skills",
+    "description": "Aparts from skills below, I've been taking a number of online courses such as Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (for frontend). I'm also cloning some famous sites like stackoverflow, jira, spotify, ..."
+  }
+}
