@@ -164,10 +164,26 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
+    ::view-transition-new(navigation-tip) {
+        animation: navTipFlatten .3s;
+        transform-origin: center bottom;
+    }
 }
 
 @layer components {
     .theme-toggle-wrapper {
         @apply fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50;
+    }
+}
+
+@keyframes navTipFlatten {
+    0% {
+        transform: translateY(.1px) scaleY(1);
+        opacity: 1
+    }
+
+    to {
+        transform: translateY(-8.1px) scaleY(.2);
+        opacity: 0
     }
 }

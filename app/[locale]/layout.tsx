@@ -32,6 +32,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Vincent Le" />
+      </head>
       <body
         className={cn(montserrat.className, "bg-white dark:bg-black")}
       >
