@@ -33,7 +33,7 @@ const Header = ({ }) => {
   const locale = useLocale();
   const t = useTranslations('header');
 
-  const handleLocaleMenuClick = (e) => {
+  const handleLocaleMenuClick = () => {
     if (menuButtonRef.current) {
       const { left, top, width, height } = menuButtonRef.current.getBoundingClientRect();
       setMenuPosition({

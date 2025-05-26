@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import { Boxes } from "@/components/ui/BgBoxes";
-import { cn } from "@/utils/cn";
 
 export function TechStack() {
   return (
