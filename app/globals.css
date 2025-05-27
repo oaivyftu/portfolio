@@ -168,6 +168,31 @@
         animation: navTipFlatten .3s;
         transform-origin: center bottom;
     }
+    .hamburger-box {
+        @apply relative inline-flex justify-center items-center w-[40px] h-[40px];
+        &.isActive {
+            .hamburger-inner {
+                &:before, &:after {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    .hamburger-inner {
+        &, &:before, &:after {
+            @apply absolute w-[30px] h-[2px] bg-black dark:bg-white will-change-transform transition-transform duration-[0.08s] ease-in-out;
+        }
+        &:before {
+            transform: translateY(-10px);
+            display: block;
+            content: "";
+        }
+        &:after {
+            transform: translateY(10px);
+            display: block;
+            content: "";
+        }
+    }
 }
 
 @layer components {

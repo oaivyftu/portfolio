@@ -6,6 +6,7 @@ import {useTheme} from "next-themes";
 import {useTranslations, useLocale} from "next-intl";
 import { usePathname, Link } from "@/i18n/navigation"
 import Portal from "@/components/ui/Portal";
+import Hamburger from "@/components/ui/Hamburger";
 
 interface Position {
   left: number;
@@ -98,7 +99,7 @@ const Header = ({ }) => {
     <>
       {openLocalMenu && menuPosition && (
         <Portal>
-          <div className="fixed w-full h-full inset-0 pointer-events-none">
+          <div className="fixed z-[5] w-full h-full inset-0 pointer-events-none">
             <div
               ref={menuRef} // Thêm ref này
               className={cn(
@@ -122,7 +123,9 @@ const Header = ({ }) => {
                   width="32"
                   height="12"
                   viewBox="0 0 32 12"
-                  className="fill-white absolute left-0 right-0 top-[-11.9px] mx-auto overflow-visible will-change-transform origin-[50%_100%] max-w-full"
+                  className={cn("fill-white absolute left-0 right-0 top-[-11.9px] mx-auto overflow-visible will-change-transform origin-[50%_100%] max-w-full", {
+                    "animate-navTipFlatten": openLocalMenu && !isClosing
+                  })}
                   style={{ viewTransitionName: "navigation-tip"}}>
                   <path d="
                     M 0 12
@@ -155,7 +158,7 @@ const Header = ({ }) => {
           </div>
         </Portal>
       )}
-      <div className="sticky top-0 mx-auto px-[50px] py-[30px] w-full flex justify-between items-center bg-white dark:bg-black">
+      <div className="sticky z-[5] top-0 mx-auto px-[50px] py-[30px] w-full flex justify-between items-center bg-white dark:bg-black">
         <div className="logo" aria-label="Home">
           <Link href="/" className="uppercase text-[26px] leading-normal no-underline font-bold">vincent le</Link>
         </div>
@@ -177,21 +180,39 @@ const Header = ({ }) => {
         </nav>
         <div className="lg:hidden flex gap-6 items-center">
           <ThemeToggle />
-          <div className="w-[40px] h-[40px] inline-flex justify-center items-center mr-[-9px]" onClick={() => setOpenMenu(!isOpenMenu)}>
-            {mounted && <img src={theme === "light" ? "/menu_icon.png" : "/menu_icon_dark.png"} alt="Menu icon" className="w-[22px]" />}
+          <div className="w-[40px] h-[40px] inline-flex justify-center items-center mr-[-9px]" onClick={() => {
+            if (!isOpenMenu) {
+              setOpenMenu(true)
+              return
+            }
+            setIsClosing(true)
+            setTimeout(() => {
+              setOpenMenu(false)
+              setIsClosing(false)
+            }, 200)
+          }}>
+            <Hamburger isActive={isOpenMenu} />
+            {/*{mounted && <img src={theme === "light" ? "/menu_icon.png" : "/menu_icon_dark.png"} alt="Menu icon" className="w-[22px]" />}*/}
           </div>
         </div>
-        <div className={cn("absolute overflow-hidden top-[100%] left-0 right-0 h-[calc(100vh-100px)] opacity-0 pointer-events-none", {"opacity-1 pointer-events-auto": isOpenMenu})} onClick={() => setOpenMenu(!isOpenMenu)}>
-          <nav role="navigation" className={cn("bg-white dark:bg-black translate-y-[-100%] transition-transform duration-[400ms]", { "translate-y-0": isOpenMenu },)}>
-            <ul>
-              <li><Link href="/" className={cn("navigation-item", { "w--current": isActive("/") })} >{t('home')}</Link></li>
-              <li><Link href="/about" className={cn("navigation-item", { "w--current": isActive("/about") })}>{t('about')}</Link></li>
-              <li><Link href="/" locale="en" className={cn("navigation-item", { "w--current": locale === "en"})}>EN</Link></li>
-              <li><Link href="/" locale="fr" className={cn("navigation-item", { "w--current": locale === "fr"})}>FR</Link></li>
-              <li><Link href="/" locale="vi" className={cn("navigation-item", { "w--current": locale === "vi"})}>VI</Link></li>
-            </ul>
-          </nav>
-        </div>
+        {isOpenMenu && (
+          <div className={cn("absolute overflow-hidden top-[100%] left-0 right-0 h-[calc(100vh-100px)]")} onClick={() => setOpenMenu(!isOpenMenu)}>
+            <nav role="navigation" className={cn(
+              "bg-white dark:bg-black",
+              {
+                "animate-slide-in": isOpenMenu && !isClosing,
+                "animate-fade-out": isClosing
+              })}>
+              <ul>
+                <li><Link href="/" className={cn("navigation-item", { "w--current": isActive("/") })} >{t('home')}</Link></li>
+                <li><Link href="/about" className={cn("navigation-item", { "w--current": isActive("/about") })}>{t('about')}</Link></li>
+                <li><Link href="/" locale="en" className={cn("navigation-item", { "w--current": locale === "en"})}>EN</Link></li>
+                <li><Link href="/" locale="fr" className={cn("navigation-item", { "w--current": locale === "fr"})}>FR</Link></li>
+                <li><Link href="/" locale="vi" className={cn("navigation-item", { "w--current": locale === "vi"})}>VI</Link></li>
+              </ul>
+            </nav>
+          </div>
+        )}
       </div>
     </>
   );

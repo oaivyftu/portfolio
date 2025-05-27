@@ -27,6 +27,16 @@ module.exports = {
         'slide-out': {
           '0%': { transform: 'translateY(0px)' },
           '100%': { transform: 'translateY(-10px)' },
+        },
+        'navTipFlatten': {
+          '0%': {
+            transform: "scaleY(.2)",
+            opacity: 1
+          },
+          '100%': {
+            transform: 'scaleY(1)',
+            opacity: 0
+          }
         }
       },
       animation: {
@@ -34,6 +44,7 @@ module.exports = {
         'fade-out': 'fade-out 0.2s 0.1s backwards',
         'slide-in': 'slide-in 0.55s cubic-bezier(.17,.67,.51,1)',
         'slide-out': 'slide-out 0.55s cubic-bezier(.17,.67,.51,1)',
+        'navTipFlatten': 'navTipFlatten .3s 1s backwards'
       }
     }
   }
