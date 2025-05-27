@@ -2,7 +2,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {ThemeToggle} from "@/components/ui/ThemeToggle";
 import {cn} from "@/utils/cn";
-import {useTheme} from "next-themes";
 import {useTranslations, useLocale} from "next-intl";
 import { usePathname, Link } from "@/i18n/navigation"
 import Portal from "@/components/ui/Portal";
@@ -26,9 +25,6 @@ const Header = ({ }) => {
   const [openLocalMenu, setOpenLocalMenu] = useState(false);
   const [isClosing, setIsClosing] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null); // thêm ref này
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   const locale = useLocale();
   const t = useTranslations('header');
 
