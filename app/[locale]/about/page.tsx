@@ -30,7 +30,7 @@ const Page = () => {
           </div>
           <div className="max-w-full overflow-x-scroll md:overflow-hidden">
             <div className="w-layout-grid skills-grid items-center">
-              {skills.map((skill, idx) => (
+              {skills.sort((a, b) => a.localeCompare(b)).map((skill, idx) => (
                 <div className="opacity-60 text-[24px] leading-[42px] lg:text-[30px] lg:leading-[46px]" key={idx}>{skill}</div>
               ))}
             </div>

@@ -1,6 +1,7 @@
 import {projects} from "@/data";
 import {getLocale, getTranslations} from 'next-intl/server';
 import {MultiLang} from "@/types";
+import Img from "@/components/ui/Img";
 
 export default async function Page({
                                      params,
@@ -35,7 +36,7 @@ export default async function Page({
         </div>
       </div>
       <div className="section mb-16">
-        <img src={imgs[0]} alt="" className="w-full"/>
+        <Img src={imgs[0]} alt="" className="w-full" width={2872} height={1974}/>
       </div>
       <div className="section">
         <div className="container">
@@ -51,7 +52,7 @@ export default async function Page({
             <h2 className="heading mb-10 ">{t('webstack')}</h2>
             <div className="flex items-center flex-col lg:flex-row gap-10">
               <div className="flex-1">
-                <img src={stackImg} className="w-full" alt=""/>
+                <Img src={stackImg} className="w-full" alt="" width={2084} height={1024} />
               </div>
               <div className="flex-1">
                 <p>{explanation[locale as keyof MultiLang]}</p>
@@ -63,10 +64,10 @@ export default async function Page({
       <div className="section">
         <div className="mb-16 flex justify-center items-center flex-col lg:flex-row 5">
           <div className="flex-1">
-            <img src={imgs[1]} alt="" className="w-full" />
+            <Img src={imgs[1]} alt="" className="w-full" width={2164} height={2334} />
           </div>
           <div className="flex-1">
-            <img src={imgs[2]} alt="" className="w-full" />
+            <Img src={imgs[2]} alt="" className="w-full" width={2164} height={2334} />
           </div>
         </div>
       </div>
@@ -75,7 +76,7 @@ export default async function Page({
           <div className="mb-16 text-center">
             <h2 className="heading mb-10 ">{t('problems')}</h2>
             <p className="mb-10">{problems[locale as keyof MultiLang]}</p>
-            <img src={imgs[3]} alt="" className="w-full"/>
+            <Img src={imgs[3]} alt="" className="w-full" width={2164} height={2334} />
           </div>
         </div>
       </div>

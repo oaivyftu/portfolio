@@ -48,7 +48,7 @@ export const projects: { [key: string]: Project} = {
     id: 1,
     type: "Fulltime Frontend",
     title: "Real estate platform in Switzerland to buy and to rent",
-    img: "/immo_banner.png",
+    img: "/immo_imgs/immo_banner.webp",
     route: "/projects/immoscout24",
     link: "https://www.immoscout24.ch/en",
     desc: {
@@ -57,7 +57,7 @@ export const projects: { [key: string]: Project} = {
       vi: "Immoscout24 là một nền tảng bất động sản full-stack cho phép người dùng mua và thuê bất động sản trên khắp Thụy Sĩ. Ứng dụng được xây dựng bằng các công nghệ hiện đại bao gồm ReactJS, Redux, TypeScript, JavaScript, NodeJS, ExpressJS và .NET Core (C#). Tôi đã cộng tác trong một nhóm phân tán gồm hơn 40 chuyên gia—bao gồm lập trình viên, nhà thiết kế, kỹ sư QA, product owner và quản lý—trải rộng nhiều quốc gia Châu Âu. Trách nhiệm chính của tôi là triển khai và nâng cao các thành phần UI quan trọng bằng React và TypeScript, đảm bảo trải nghiệm người dùng nhất quán, có thể mở rộng và phản hồi nhanh trên toàn bộ nền tảng."
     },
     stacks: ["ReactJs", "Redux", "Styled-Components", "Design System", "Typescript", "Javascript"],
-    imgs: ["/immo_1.png", "/immo_2.png", "/immo_3.png", "/immo_4.png"],
+    imgs: ["/immo_imgs/immo_1.webp", "/immo_imgs/immo_2.webp", "/immo_imgs/immo_3.webp", "/immo_imgs/immo_4.webp"],
     purposeAndGoal: {
       en: "This project included multiple modules and was developed by a large international team, divided into smaller squads. Each team was responsible for a specific domain or feature, such as the property listing page, search filters, or user authentication. My team focused on implementing and refining the UI for key customer-facing components. Thanks to the CI/CD pipeline, strict code conventions, and regular code reviews, the team was able to maintain consistent quality while scaling the app efficiently.",
       fr: "Ce projet comprenait plusieurs modules et a été développé par une grande équipe internationale, divisée en petites unités. Chaque équipe était responsable d'un domaine ou d'une fonctionnalité spécifique, comme la page de liste des propriétés, les filtres de recherche ou l'authentification des utilisateurs. Mon équipe s'est concentrée sur l'implémentation et l'amélioration de l'UI pour les composants face au client. Grâce au pipeline CI/CD, aux conventions de code strictes et aux revues de code régulières, l'équipe a pu maintenir une qualité constante tout en développant l'application efficacement.",
@@ -86,7 +86,7 @@ export const projects: { [key: string]: Project} = {
     id: 2,
     type: "Side Project",
     title: "The platform to practice the French exam: TCF Canada",
-    img: "/prettcf_banner.png",
+    img: "/prettcf_imgs/prettcf_banner.webp",
     route: "/projects/prettcf",
     link: "https://prettcf.com/",
     desc: {
@@ -95,7 +95,7 @@ export const projects: { [key: string]: Project} = {
       vi: "Prettcf.com là một nền tảng trực tuyến được xây dựng bằng WordPress cho phép người dùng luyện thi TCF Canada. Tôi đã độc lập thiết kế và phát triển trang web với trọng tâm là trải nghiệm người dùng và chức năng tùy chỉnh thông qua cả plugins WordPress và mã tùy chỉnh."
     },
     stacks: ["WordPress", "JavaScript", "PHP", "CSS", "Elementor", "Tutor LMS"],
-    imgs: ["/prettcf_1.png", "/prettcf_2.png", "/prettcf_3.png", "/prettcf_4.png"],
+    imgs: ["/prettcf_imgs/prettcf_1.webp", "/prettcf_imgs/prettcf_2.webp", "/prettcf_imgs/prettcf_3.webp", "/prettcf_imgs/prettcf_4.webp"],
     purposeAndGoal: {
       en: "The goal of this project was to create a practical platform to help French learners prepare for the TCF Canada exam. I wanted to provide a friendly, accessible interface where users could experience real test formats and track their progress over time.",
       fr: "L'objectif de ce projet était de créer une plateforme pratique pour aider les apprenants de français à se préparer à l'examen TCF Canada. Je voulais fournir une interface conviviale et accessible où les utilisateurs pourraient expérimenter des formats de test réels et suivre leur progression au fil du temps.",
