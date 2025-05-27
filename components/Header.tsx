@@ -21,10 +21,8 @@ const Header = ({ }) => {
   const [menuPosition, setMenuPosition] = useState<Position | null>(null)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
   const pathname = usePathname();
-  const { theme } = useTheme();
   const [isOpenMenu, setOpenMenu] = useState<boolean>(false);
   const isActive = (href: string) => pathname === href;
-  const [mounted, setMounted] = useState(false);
   const [openLocalMenu, setOpenLocalMenu] = useState(false);
   const [isClosing, setIsClosing] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null); // thêm ref này
@@ -192,7 +190,6 @@ const Header = ({ }) => {
             }, 200)
           }}>
             <Hamburger isActive={isOpenMenu} />
-            {/*{mounted && <img src={theme === "light" ? "/menu_icon.png" : "/menu_icon_dark.png"} alt="Menu icon" className="w-[22px]" />}*/}
           </div>
         </div>
         {isOpenMenu && (
