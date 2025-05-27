@@ -30,5 +30,12 @@
   "mySkills": {
     "title": "Mes compétences",
     "description": "En plus des compétences ci-dessous, je suis plusieurs cours en ligne tels que Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (pour le frontend). Je reproduis aussi certains sites connus comme StackOverflow, Jira, Spotify, ..."
+  },
+  "projects": {
+    "viewsite": "Voir le site",
+    "purporseandgoal": "Objectif et but du projet",
+    "webstack": "Stack technique et explications",
+    "problems": "Problèmes et processus de réflexion",
+    "lessons": "Leçons apprises"
   }
 }

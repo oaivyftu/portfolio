@@ -30,5 +30,13 @@
   "mySkills": {
     "title": "Kỹ năng của tôi",
     "description": "Ngoài các kỹ năng dưới đây, tôi đã tham gia một số khóa học trực tuyến như Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (cho frontend). Tôi cũng đang sao chép một số trang web nổi tiếng như stackoverflow, jira, spotify, ..."
+  },
+
+  "projects": {
+    "viewsite": "Xem trang web",
+    "purporseandgoal": "Mục đích và mục tiêu dự án",
+    "webstack": "Stack công nghệ và giải thích",
+    "problems": "Vấn đề và quá trình giải quyết",
+    "lessons": "Bài học kinh nghiệm"
   }
 }

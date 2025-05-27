@@ -117,10 +117,7 @@ const Header = ({ }) => {
                   width="32"
                   height="12"
                   viewBox="0 0 32 12"
-                  className={cn("fill-white absolute left-0 right-0 top-[-11.9px] mx-auto overflow-visible will-change-transform origin-[50%_100%] max-w-full", {
-                    "animate-navTipFlatten": openLocalMenu && !isClosing
-                  })}
-                  style={{ viewTransitionName: "navigation-tip"}}>
+                  className={cn("fill-white absolute left-0 right-0 top-[-11.9px] mx-auto overflow-visible will-change-transform origin-[50%_100%] max-w-full")}>
                   <path d="
                     M 0 12
                     C 8 12

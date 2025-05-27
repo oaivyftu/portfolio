@@ -30,5 +30,12 @@
   "mySkills": {
     "title": "My Skills",
     "description": "Aparts from skills below, I've been taking a number of online courses such as Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (for frontend). I'm also cloning some famous sites like stackoverflow, jira, spotify, ..."
+  },
+  "projects": {
+    "viewsite": "View Site",
+    "purporseandgoal": "Project Purpose and Goal",
+    "webstack": "Web Stack and Explanation",
+    "problems": "Problems and Thought Process",
+    "lessons": "Lessons Learned"
   }
 }
