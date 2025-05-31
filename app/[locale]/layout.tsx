@@ -40,6 +40,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>
           <ThemeProvider
+            defaultTheme="dark"
             attribute="class"
             disableTransitionOnChange={false}
           >

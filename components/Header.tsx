@@ -6,6 +6,7 @@ import {useTranslations, useLocale} from "next-intl";
 import { usePathname, Link } from "@/i18n/navigation"
 import Portal from "@/components/ui/Portal";
 import Hamburger from "@/components/ui/Hamburger";
+import {FaChevronDown} from "react-icons/fa";
 
 interface Position {
   left: number;
@@ -158,9 +159,10 @@ const Header = ({ }) => {
             <li className="relative">
               <button
                 ref={menuButtonRef}
-                className="uppercase navigation-item dark:text-white hover:opacity-90"
+                className="uppercase navigation-item dark:text-white hover:opacity-90 flex justify-between items-center"
                 onClick={handleLocaleMenuClick}>
                 {locale}
+                <FaChevronDown className="ml-[4px]" />
               </button>
             </li>
             <li><Link href="/" className={cn("navigation-item", {"w--current": isActive("/")})}>{t('home')}</Link></li>
