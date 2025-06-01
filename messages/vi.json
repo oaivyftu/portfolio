@@ -9,7 +9,8 @@
   },
   "recentProjects": {
     "title": "Những dự án tôi đã làm",
-    "description": "Hầu hết các dự án tôi đã làm việc là nội bộ hoặc các MVP ngắn hạn nhằm thu hút đầu tư, vì vậy chúng không thể truy cập công khai. Tuy nhiên, tôi rất vui được chia sẻ một dự án công khai cùng với một số dự án cá nhân phản ánh kỹ năng và kinh nghiệm của tôi."
+    "description": "Hầu hết các dự án tôi đã làm việc là nội bộ hoặc các MVP ngắn hạn nhằm thu hút đầu tư, vì vậy chúng không thể truy cập công khai. Tuy nhiên, tôi rất vui được chia sẻ một dự án công khai cùng với một số dự án cá nhân phản ánh kỹ năng và kinh nghiệm của tôi.",
+    "viewMore": "Xem thêm"
   },
   "myExperiences": {
     "title": "Kinh nghiệm của tôi",

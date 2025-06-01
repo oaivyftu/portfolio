@@ -26,6 +26,7 @@ const RecentProjects = () => {
             <div className="work-description">
               <Link href={route} locale={locale} aria-label={title} className="mb-[5px] text-[20px] leading-[34px] font-normal no-underline">{title}</Link>
               <div className="paragraph-light">{type}</div>
+              <Link href={route} locale={locale} aria-label={title} className="text-[16px] leading-normal font-normal">{t('viewMore')}</Link>
             </div>
           </div>
         ))}

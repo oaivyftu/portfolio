@@ -9,7 +9,8 @@
   },
   "recentProjects": {
     "title": "Ce sur quoi j'ai travaillé",
-    "description": "La plupart des projets sur lesquels j’ai travaillé étaient soit internes, soit des MVP à court terme visant à attirer des investissements, donc ils ne sont pas accessibles au public. Cependant, je suis ravi de partager un projet public ainsi que quelques projets personnels qui reflètent mes compétences et mon expérience."
+    "description": "La plupart des projets sur lesquels j’ai travaillé étaient soit internes, soit des MVP à court terme visant à attirer des investissements, donc ils ne sont pas accessibles au public. Cependant, je suis ravi de partager un projet public ainsi que quelques projets personnels qui reflètent mes compétences et mon expérience.",
+    "viewMore": "Voir plus"
   },
   "myExperiences": {
     "title": "Mes expériences",

@@ -84,7 +84,7 @@ export const projects: { [key: string]: Project} = {
   },
   'prettcf': {
     id: 2,
-    type: "Side Project",
+    type: "Founder",
     title: "The platform to practice the French exam: TCF Canada",
     img: "/prettcf_imgs/prettcf_banner.webp",
     route: "/projects/prettcf",

@@ -18,5 +18,5 @@ export type Project = {
   problems: MultiLang;
   lessons: MultiLang;
   stackImg: string;
-  type: "Fulltime Frontend" | "Side Project" | "Freelance"
+  type: string;
 }
