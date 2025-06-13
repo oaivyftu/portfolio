@@ -7,11 +7,22 @@ const Hero = () => {
     <div className="section">
       <div className="container">
         <div className="mt-[100px] mb-[80px] md:mb-[140px]">
-          <div className="name-text">
-            Vincent Le
+          <div className="flex justify-between">
+            <div className='flex-[2_1_0%]'>
+              <div className="name-text">
+                Vincent Le
+              </div>
+              <div className="paragraph-light">{t('role')}</div>
+              <h1 className="heading-jumbo mb-10">{t('description')}</h1>
+            </div>
+            <div className="flex-1">
+              <div className="overflow-hidden">
+                <div className="relative aspect-[3/4]">
+                  <img src="/headshots.webp" alt="Headshots image to see your cursor" className='w-[700%] absolute top-0 left-0 max-w-none' />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="paragraph-light">{t('role')}</div>
-          <h1 className="heading-jumbo mb-10">{t('description')}</h1>
         </div>
       </div>
     </div>
