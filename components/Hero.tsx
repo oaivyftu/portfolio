@@ -1,5 +1,9 @@
+"use client";
+
 import React from 'react';
 import {useTranslations} from "next-intl";
+import Image from "next/image";
+
 
 const Hero = () => {
   const t = useTranslations('hero');
@@ -18,7 +22,7 @@ const Hero = () => {
             <div className="flex-1">
               <div className="overflow-hidden">
                 <div className="relative aspect-[3/4]">
-                  <img src="/headshots.webp" alt="Headshots image to see your cursor" className='w-[700%] absolute top-0 left-0 max-w-none' />
+                  <Image src="/headshots.webp" alt="Headshots image to see your cursor" className='w-[700%] absolute top-0 left-0 max-w-none' />
                 </div>
               </div>
             </div>
