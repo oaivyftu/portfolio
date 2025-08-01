@@ -105,7 +105,7 @@ const Header = ({ }) => {
                 top: `${menuPosition.top + menuPosition.height + 10}px`,
                 transform: `translateX(${menuPosition.center-38}px)`,
                 width: '76px',
-                height: '114px',
+                height: '76px',
                 filter: "drop-shadow(0 1px 2px hsl(210deg 15% 6%/.1)) drop-shadow(0 2px 4px hsl(210deg 15% 6%/.1)) drop-shadow(0 8px 16px hsl(210deg 15% 6%/.1))"
               }}
             >
@@ -139,9 +139,6 @@ const Header = ({ }) => {
                     </li>
                     <li><Link href="/" locale="fr"
                               className={cn("navigation-item locale-nav-item", {"w--current": locale === "fr"})}>FR</Link>
-                    </li>
-                    <li><Link href="/" locale="vi"
-                              className={cn("navigation-item locale-nav-item", {"w--current": locale === "vi"})}>VI</Link>
                     </li>
                   </ul>
                 </div>
