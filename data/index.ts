@@ -102,8 +102,46 @@ export const projects: { [key: string]: Project} = {
       vi: "Mục tiêu của dự án này là tạo ra một nền tảng thực tế để giúp người học tiếng Pháp chuẩn bị cho kỳ thi TCF Canada. Tôi muốn cung cấp một giao diện thân thiện, dễ tiếp cận nơi người dùng có thể trải nghiệm các định dạng bài thi thực tế và theo dõi tiến độ của họ theo thời gian."
     },
     explanation: {
-      en: "I used WordPress as the main CMS and extensively configured plugins like Tutor LMS to build a complete learning system. I also applied custom CSS and PHP to tweak layouts, enhance responsiveness, and add interactivity. The design was fully customized with Elementor and hand-crafted assets including banners and logos to match the platform's identity.",
-      fr: "J'ai utilisé WordPress comme CMS principal et configuré de manière extensive des plugins comme Tutor LMS pour construire un système d'apprentissage complet. J'ai également appliqué du CSS et PHP personnalisés pour ajuster les layouts, améliorer la réactivité et ajouter de l'interactivité. Le design a été entièrement personnalisé avec Elementor et des ressources créées sur mesure, incluant des bannières et logos correspondant à l'identité de la plateforme.",
+      en: "I built the platform using Laravel and PHP, with SASS for clean, scalable styling. I crafted a fully custom system focused on performance, flexibility, and a smooth user experience.",
+      fr: "J’ai développé la plateforme avec Laravel et PHP, en utilisant SASS pour un style propre et évolutif. J’ai conçu un système entièrement sur mesure, axé sur la performance, la flexibilité et une expérience utilisateur fluide.",
+      vi: "Tôi đã sử dụng WordPress làm CMS chính và cấu hình rộng rãi các plugin như Tutor LMS để xây dựng một hệ thống học tập hoàn chỉnh. Tôi cũng áp dụng CSS và PHP tùy chỉnh để điều chỉnh layout, tăng cường tính responsive và thêm tính tương tác. Thiết kế được tùy chỉnh hoàn toàn với Elementor và các tài nguyên được tạo thủ công bao gồm banner và logo để phù hợp với định danh của nền tảng."
+    },
+
+    problems: {
+      EN: "Balancing plugin flexibility with custom requirements was challenging. Some design features and user interactions were not achievable through plugins alone, so I had to write custom JavaScript and PHP to meet those needs. Ensuring responsiveness and consistency across devices also required deep inspection and testing.",
+      fr: "Équilibrer la flexibilité des plugins avec les exigences personnalisées était un défi. Certaines fonctionnalités de design et interactions utilisateur n'étaient pas réalisables uniquement avec des plugins, j'ai donc dû écrire du JavaScript et PHP personnalisé pour répondre à ces besoins. Assurer la réactivité et la cohérence sur tous les appareils a également nécessité une inspection et des tests approfondis.",
+      vi: "Cân bằng tính linh hoạt của plugin với các yêu cầu tùy chỉnh là một thách thức. Một số tính năng thiết kế và tương tác người dùng không thể thực hiện được chỉ thông qua plugin, vì vậy tôi đã phải viết JavaScript và PHP tùy chỉnh để đáp ứng những nhu cầu đó. Đảm bảo tính responsive và nhất quán trên các thiết bị cũng đòi hỏi kiểm tra và thử nghiệm kỹ lưỡng."
+    },
+
+    lessons: {
+      en: "This project improved my understanding of WordPress as a development platform. I learned how to creatively extend its functionalities while maintaining performance. It also strengthened my frontend skills through real-world practice of CSS styling and visual design, and gave me confidence in managing full-stack responsibilities, even with limited backend needs.",
+      fr: "Ce projet a amélioré ma compréhension de WordPress en tant que plateforme de développement. J'ai appris à étendre de manière créative ses fonctionnalités tout en maintenant les performances. Il a également renforcé mes compétences frontend à travers la pratique réelle du style CSS et du design visuel, et m'a donné confiance dans la gestion des responsabilités full-stack, même avec des besoins backend limités.",
+      vi: "Dự án này đã cải thiện hiểu biết của tôi về WordPress như một nền tảng phát triển. Tôi đã học cách mở rộng các chức năng của nó một cách sáng tạo trong khi vẫn duy trì hiệu suất. Nó cũng củng cố kỹ năng frontend của tôi thông qua thực hành thực tế về CSS styling và thiết kế trực quan, và cho tôi sự tự tin trong việc quản lý trách nhiệm full-stack, ngay cả với các nhu cầu backend hạn chế."
+    },
+    stackImg: "/prettcf_stack.png"
+  },
+  'datvangphuquoc': {
+    id: 2,
+    type: "Full-Stack engineer",
+    title: "The real estate e-commerce platform of Phu Quoc island, Vietnam",
+    img: "/p2.svg",
+    route: "/projects/datvangphuquoc",
+    link: "https://datvangphuquoc.com/",
+    desc: {
+      en: "Datvangphuquoc.com is an online platform built with React.js, designed to deliver a fast and user-friendly experience. I independently designed and developed the site, focusing on performance, scalability, and fully custom features.",
+      fr: "Datvangphuquoc.com est une plateforme en ligne développée avec React.js, conçue pour offrir une expérience rapide et fluide. J’ai conçu et développé le site de manière indépendante, en mettant l’accent sur la performance, l’évolutivité et des fonctionnalités entièrement personnalisées.",
+      vi: "Prettcf.com là một nền tảng trực tuyến được xây dựng bằng WordPress cho phép người dùng luyện thi TCF Canada. Tôi đã độc lập thiết kế và phát triển trang web với trọng tâm là trải nghiệm người dùng và chức năng tùy chỉnh thông qua cả plugins WordPress và mã tùy chỉnh."
+    },
+    stacks: ["ReactJs", "Redux", "Styled-Components", "Design System", "Typescript", "Javascript"],
+    imgs: ["/p2.svg", "/p2.svg", "/p2.svg", "/p2.svg"],
+    purposeAndGoal: {
+      en: "The goal of this project was to create a modern platform to showcase real estate opportunities in Phu Quoc. I focused on building a clean, user-friendly interface where users can easily explore properties, view key information, and navigate listings with a smooth experience.",
+      fr: "L’objectif de ce projet était de créer une plateforme moderne pour présenter des opportunités immobilières à Phu Quoc. Je me suis concentré sur une interface claire et intuitive permettant aux utilisateurs d’explorer facilement les biens, consulter les informations essentielles et naviguer de manière fluide.",
+      vi: "Mục tiêu của dự án này là tạo ra một nền tảng thực tế để giúp người học tiếng Pháp chuẩn bị cho kỳ thi TCF Canada. Tôi muốn cung cấp một giao diện thân thiện, dễ tiếp cận nơi người dùng có thể trải nghiệm các định dạng bài thi thực tế và theo dõi tiến độ của họ theo thời gian."
+    },
+    explanation: {
+      en: "I built the platform using React.js, Next.js, and Node.js, with SASS for clean, scalable styling. I focused on performance, flexibility, and a smooth user experience.",
+      fr: "J’ai développé la plateforme avec React.js, Next.js et Node.js, en utilisant SASS pour un style propre et évolutif. Je me suis concentré sur la performance, la flexibilité et une expérience utilisateur fluide.",
       vi: "Tôi đã sử dụng WordPress làm CMS chính và cấu hình rộng rãi các plugin như Tutor LMS để xây dựng một hệ thống học tập hoàn chỉnh. Tôi cũng áp dụng CSS và PHP tùy chỉnh để điều chỉnh layout, tăng cường tính responsive và thêm tính tương tác. Thiết kế được tùy chỉnh hoàn toàn với Elementor và các tài nguyên được tạo thủ công bao gồm banner và logo để phù hợp với định danh của nền tảng."
     },
 
@@ -114,8 +152,8 @@ export const projects: { [key: string]: Project} = {
     },
 
     lessons: {
-      en: "This project improved my understanding of WordPress as a development platform. I learned how to creatively extend its functionalities while maintaining performance. It also strengthened my frontend skills through real-world practice of CSS styling and visual design, and gave me confidence in managing full-stack responsibilities, even with limited backend needs.",
-      fr: "Ce projet a amélioré ma compréhension de WordPress en tant que plateforme de développement. J'ai appris à étendre de manière créative ses fonctionnalités tout en maintenant les performances. Il a également renforcé mes compétences frontend à travers la pratique réelle du style CSS et du design visuel, et m'a donné confiance dans la gestion des responsabilités full-stack, même avec des besoins backend limités.",
+      en: "This project deepened my understanding of building scalable web applications with React and Next.js. I improved my ability to structure clean frontend architecture, optimize performance, and deliver smooth user experiences, while gaining more confidence handling full-stack responsibilities with Node.js.",
+      fr: "Ce projet a renforcé ma compréhension du développement d’applications web évolutives avec React et Next.js. J’ai amélioré ma capacité à structurer une architecture frontend propre, optimiser les performances et offrir une expérience utilisateur fluide, tout en gagnant en confiance dans la gestion des aspects full-stack avec Node.js.",
       vi: "Dự án này đã cải thiện hiểu biết của tôi về WordPress như một nền tảng phát triển. Tôi đã học cách mở rộng các chức năng của nó một cách sáng tạo trong khi vẫn duy trì hiệu suất. Nó cũng củng cố kỹ năng frontend của tôi thông qua thực hành thực tế về CSS styling và thiết kế trực quan, và cho tôi sự tự tin trong việc quản lý trách nhiệm full-stack, ngay cả với các nhu cầu backend hạn chế."
     },
     stackImg: "/prettcf_stack.png"
