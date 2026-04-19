@@ -94,7 +94,7 @@ export const projects: { [key: string]: Project} = {
       fr: "Prettcf.com est une plateforme en ligne construite avec WordPress permettant aux utilisateurs de s'entraîner à l'examen TCF Canada. J'ai conçu et développé le site de manière indépendante en mettant l'accent sur l'expérience utilisateur et les fonctionnalités personnalisées via des plugins WordPress et du code personnalisé.",
       vi: "Prettcf.com là một nền tảng trực tuyến được xây dựng bằng WordPress cho phép người dùng luyện thi TCF Canada. Tôi đã độc lập thiết kế và phát triển trang web với trọng tâm là trải nghiệm người dùng và chức năng tùy chỉnh thông qua cả plugins WordPress và mã tùy chỉnh."
     },
-    stacks: ["WordPress", "JavaScript", "PHP", "CSS", "Elementor", "Tutor LMS"],
+    stacks: ["JavaScript", "PHP", "SASS", "Laravel"],
     imgs: ["/prettcf_imgs/prettcf_1.webp", "/prettcf_imgs/prettcf_2.webp", "/prettcf_imgs/prettcf_3.webp", "/prettcf_imgs/prettcf_4.webp"],
     purposeAndGoal: {
       en: "The goal of this project was to create a practical platform to help French learners prepare for the TCF Canada exam. I wanted to provide a friendly, accessible interface where users could experience real test formats and track their progress over time.",

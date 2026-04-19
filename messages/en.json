@@ -5,7 +5,7 @@
   },
   "hero": {
     "role": "Frontend Engineer",
-    "description": "Hey there! I'm a bilingual \uD83C\uDDEC\uD83C\uDDE7 \uD83C\uDDEB\uD83C\uDDF7 frontend engineer based in Ontario, Canada \uD83C\uDDE8\uD83C\uDDE6"
+    "description": "Hey there! I'm a bilingual \uD83C\uDDEC\uD83C\uDDE7 \uD83C\uDDEB\uD83C\uDDF7 full-stack software engineer based in Ontario, Canada \uD83C\uDDE8\uD83C\uDDE6"
   },
   "recentProjects": {
     "title": "What I've been working on",
@@ -14,14 +14,14 @@
   },
   "myExperiences": {
     "title": "My experiences",
-    "description": "Over the past 7 years, I’ve worked as a frontend developer for international teams and large-scale projects in Europe and Asia. My experience spans industries like real estate, banking, and digital marketing — where I helped build performant, maintainable UIs and contributed to core architecture decisions. I thrive in cross-functional teams and love turning complex product requirements into smooth user experiences."
+    "description": "I’m a full-stack software engineer with 12+ years of experience building fast, user-friendly web applications with international teams."
   },
   "contactBox": {
     "title": "Want to work together?",
     "description": "Feel free to reach out if you're looking for a developer, have a question, or just want to connect"
   },
   "footer": {
-    "copyright": "This website is built with Next.js and Tailwind CSS by"
+    "copyright": "This website is made with coffee and milk tea by"
   },
   "about": {
     "label": "hey there!",

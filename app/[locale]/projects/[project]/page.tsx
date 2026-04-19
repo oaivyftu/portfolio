@@ -9,9 +9,10 @@ export default async function Page({
   params: Promise<{ project: string }>
 }) {
   const { project: projectId } = await params
-  const locale = await  getLocale()
+  const locale = await getLocale()
   const t = await getTranslations("projects")
   const { title, type, desc, stacks, stackImg, link, imgs, purposeAndGoal, explanation, problems, lessons } = projects[projectId]
+
   return (
     <div>
       <div className="section">

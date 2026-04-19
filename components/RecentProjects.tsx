@@ -15,9 +15,6 @@ const RecentProjects = () => {
         <h2 className="mb-4">
           {t('title')}
         </h2>
-        <p className="leading-normal w-full lg:w-1/2 mb-4">
-          {t('description')}
-        </p>
       </div>
       <div className="w-layout-grid works-grid">
         {Object.values(projects).map(({ id, title, img, type, route }, idx) => (
