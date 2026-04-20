@@ -108,7 +108,7 @@ export const projects: { [key: string]: Project} = {
     },
 
     problems: {
-      EN: "Balancing plugin flexibility with custom requirements was challenging. Some design features and user interactions were not achievable through plugins alone, so I had to write custom JavaScript and PHP to meet those needs. Ensuring responsiveness and consistency across devices also required deep inspection and testing.",
+      en: "Balancing plugin flexibility with custom requirements was challenging. Some design features and user interactions were not achievable through plugins alone, so I had to write custom JavaScript and PHP to meet those needs. Ensuring responsiveness and consistency across devices also required deep inspection and testing.",
       fr: "Équilibrer la flexibilité des plugins avec les exigences personnalisées était un défi. Certaines fonctionnalités de design et interactions utilisateur n'étaient pas réalisables uniquement avec des plugins, j'ai donc dû écrire du JavaScript et PHP personnalisé pour répondre à ces besoins. Assurer la réactivité et la cohérence sur tous les appareils a également nécessité une inspection et des tests approfondis.",
       vi: "Cân bằng tính linh hoạt của plugin với các yêu cầu tùy chỉnh là một thách thức. Một số tính năng thiết kế và tương tác người dùng không thể thực hiện được chỉ thông qua plugin, vì vậy tôi đã phải viết JavaScript và PHP tùy chỉnh để đáp ứng những nhu cầu đó. Đảm bảo tính responsive và nhất quán trên các thiết bị cũng đòi hỏi kiểm tra và thử nghiệm kỹ lưỡng."
     },
