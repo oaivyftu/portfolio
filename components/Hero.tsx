@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="section">
       <div className="container">
-        <div className="mt-[100px] mb-[80px] md:mb-[140px]">
+        <div className="mt-[100px] mb-[15px] md:mb-[30px]">
           <div className="name-text">
             Vincent Le
           </div>

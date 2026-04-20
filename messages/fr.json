@@ -4,7 +4,7 @@
     "about": "À propos"
   },
   "hero": {
-    "role": "Ingénieur Frontend",
+    "role": "Ingénieur FullStack",
     "description": "Bonjour ! Je suis un ingénieur full-stack bilingue 🇬🇧 🇫🇷 basé en Ontario, Canada 🇨🇦"
   },
   "recentProjects": {
@@ -26,7 +26,7 @@
   "about": {
     "label": "salut !",
     "title": "Je suis Vincent Le",
-    "description": "Avec plus de 12 ans d’expérience en développement frontend, je suis spécialisé dans la création de sites et d’applications web responsives en utilisant React, TailwindCSS et les standards modernes du web. J’aime résoudre les défis de design avec un code propre et une excellente expérience utilisateur. Ma mission est de créer des interfaces qui fonctionnent parfaitement et qui procurent de la joie aux utilisateurs."
+    "description": "Avec plus de 12 ans d’expérience en développement web full-stack, je me spécialise dans la création de sites et d’applications web responsives en utilisant des technologies modernes comme React.js, Tailwind CSS et Node.js. J’aime relever des défis de design avec un code propre et une excellente expérience utilisateur. Ma mission est de créer des interfaces qui fonctionnent parfaitement tout en apportant du plaisir aux utilisateurs."
   },
   "mySkills": {
     "title": "Mes compétences",

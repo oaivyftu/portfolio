@@ -108,14 +108,14 @@ export const projects: { [key: string]: Project} = {
     },
 
     problems: {
-      en: "Balancing plugin flexibility with custom requirements was challenging. Some design features and user interactions were not achievable through plugins alone, so I had to write custom JavaScript and PHP to meet those needs. Ensuring responsiveness and consistency across devices also required deep inspection and testing.",
-      fr: "Équilibrer la flexibilité des plugins avec les exigences personnalisées était un défi. Certaines fonctionnalités de design et interactions utilisateur n'étaient pas réalisables uniquement avec des plugins, j'ai donc dû écrire du JavaScript et PHP personnalisé pour répondre à ces besoins. Assurer la réactivité et la cohérence sur tous les appareils a également nécessité une inspection et des tests approfondis.",
+      en: "Balancing performance with rich UI and dynamic data was challenging. Some complex interactions and data flows required custom logic with Laravel and PHP, and ensuring consistency across devices needed careful testing and optimization.",
+      fr: "Trouver l’équilibre entre performance, interface riche et gestion de données dynamiques était un défi. Certaines interactions complexes et flux de données ont nécessité une logique personnalisée avec Laravel et PHP, et assurer la cohérence sur tous les appareils a demandé des tests et des optimisations approfondis.",
       vi: "Cân bằng tính linh hoạt của plugin với các yêu cầu tùy chỉnh là một thách thức. Một số tính năng thiết kế và tương tác người dùng không thể thực hiện được chỉ thông qua plugin, vì vậy tôi đã phải viết JavaScript và PHP tùy chỉnh để đáp ứng những nhu cầu đó. Đảm bảo tính responsive và nhất quán trên các thiết bị cũng đòi hỏi kiểm tra và thử nghiệm kỹ lưỡng."
     },
 
     lessons: {
-      en: "This project improved my understanding of WordPress as a development platform. I learned how to creatively extend its functionalities while maintaining performance. It also strengthened my frontend skills through real-world practice of CSS styling and visual design, and gave me confidence in managing full-stack responsibilities, even with limited backend needs.",
-      fr: "Ce projet a amélioré ma compréhension de WordPress en tant que plateforme de développement. J'ai appris à étendre de manière créative ses fonctionnalités tout en maintenant les performances. Il a également renforcé mes compétences frontend à travers la pratique réelle du style CSS et du design visuel, et m'a donné confiance dans la gestion des responsabilités full-stack, même avec des besoins backend limités.",
+      en: "This project improved my understanding of modern web development with Laravel and PHP. I learned how to build scalable, high-performance interfaces and strengthen my frontend skills through real-world UI/UX design, while gaining confidence handling full-stack responsibilities with Node.js.",
+      fr: "Ce projet a amélioré ma compréhension du développement web moderne avec Laravel et PHP. J’ai appris à créer des interfaces évolutives et performantes, tout en renforçant mes compétences frontend grâce à la pratique réelle du design UI/UX, et en gagnant en confiance dans la gestion des aspects full-stack avec Node.js.",
       vi: "Dự án này đã cải thiện hiểu biết của tôi về WordPress như một nền tảng phát triển. Tôi đã học cách mở rộng các chức năng của nó một cách sáng tạo trong khi vẫn duy trì hiệu suất. Nó cũng củng cố kỹ năng frontend của tôi thông qua thực hành thực tế về CSS styling và thiết kế trực quan, và cho tôi sự tự tin trong việc quản lý trách nhiệm full-stack, ngay cả với các nhu cầu backend hạn chế."
     },
     stackImg: "/prettcf_stack.png"

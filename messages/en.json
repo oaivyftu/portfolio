@@ -4,7 +4,7 @@
     "about": "About"
   },
   "hero": {
-    "role": "Frontend Engineer",
+    "role": "FullStack Software Engineer",
     "description": "Hey there! I'm a bilingual \uD83C\uDDEC\uD83C\uDDE7 \uD83C\uDDEB\uD83C\uDDF7 full-stack software engineer based in Ontario, Canada \uD83C\uDDE8\uD83C\uDDE6"
   },
   "recentProjects": {
@@ -26,7 +26,7 @@
   "about": {
     "label": "hey there!",
     "title": "I'm Vincent Le",
-    "description": "With over 7 years of experience in frontend development, I specialize in building responsive websites and web apps using React, TailwindCSS, and modern web standards. I enjoy solving design challenges with clean code and great UX. My mission is to build interfaces that not only work flawlessly but also bring joy to users."
+    "description": "With over 12+ years of experience in fullstack web development, I specialize in building responsive websites and web apps using modern web standards like ReactJs, TailwindCSS, NodeJs, etc. I enjoy solving design challenges with clean code and great UX. My mission is to build interfaces that not only work flawlessly but also bring joy to users."
   },
   "mySkills": {
     "title": "My Skills",
