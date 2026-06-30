@@ -31,7 +31,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Vincent Le" />
       </head>
@@ -39,11 +39,7 @@ export default async function RootLayout({
         className={cn(montserrat.className, "bg-white dark:bg-black")}
       >
         <NextIntlClientProvider>
-          <ThemeProvider
-            defaultTheme="dark"
-            attribute="class"
-            disableTransitionOnChange={false}
-          >
+          <ThemeProvider defaultTheme="dark">
             <div className="site-shell">
               <Header />
               {children}

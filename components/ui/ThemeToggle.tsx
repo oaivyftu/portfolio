@@ -1,6 +1,6 @@
 'use client'
 
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/app/provider'
 import { motion } from 'framer-motion'
 import {useEffect, useState} from 'react'
 
@@ -15,14 +15,17 @@ export const ThemeToggle = () => {
   const isDark = resolvedTheme === 'dark'
 
   const handleToggle = () => {
+    const audio = new Audio(isDark ? '/sounds/turn_on_light.wav' : '/sounds/turn_off_light.wav')
+
+    audio.play().catch(() => {
+      // Browsers can block audio until they trust the interaction.
+    })
+
     if (isDark) {
-      const audio = new Audio('/sounds/turn_on_light.wav')
-      audio.play()
+      setTheme('light')
     } else {
-      const audio = new Audio('/sounds/turn_off_light.wav')
-      audio.play()
+      setTheme('dark')
     }
-    setTheme(isDark ? 'light' : 'dark')
   }
 
   return (
