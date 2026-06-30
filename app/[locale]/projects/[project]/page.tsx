@@ -12,6 +12,7 @@ export default async function Page({
   const locale = await getLocale()
   const t = await getTranslations("projects")
   const { title, type, desc, stacks, stackImg, link, imgs, purposeAndGoal, explanation, problems, lessons } = projects[projectId]
+  const hasLiveLink = Boolean(link?.trim())
 
   return (
     <div>
@@ -29,10 +30,12 @@ export default async function Page({
                 <li key={idx}>{stack}</li>
               ))}
             </ul>
-            <ul>
-              <li className="mb-4 font-bold">LIVE</li>
-              <li><a href={link} target="_blank">{t('viewsite')}</a></li>
-            </ul>
+            {hasLiveLink && (
+              <ul>
+                <li className="mb-4 font-bold">LIVE</li>
+                <li><a href={link} target="_blank" rel="noreferrer">{t('viewsite')}</a></li>
+              </ul>
+            )}
           </div>
         </div>
       </div>
