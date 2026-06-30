@@ -42,6 +42,63 @@ export const skills = [
   "Teamwork", "Problem solving", "Critical thinking"
 ];
 
+const createApplicationProject = ({
+  id,
+  slug,
+  type,
+  title,
+  img,
+  link,
+  domain,
+  outcome,
+  stacks,
+}: {
+  id: number;
+  slug: string;
+  type: string;
+  title: string;
+  img: string;
+  link: string;
+  domain: string;
+  outcome: string;
+  stacks: string[];
+}): Project => ({
+  id,
+  type,
+  title,
+  img,
+  route: `/projects/${slug}`,
+  link,
+  desc: {
+    en: `${title} is a ${domain} application concept focused on clean user flows, responsive dashboards, and practical business workflows. I created it as a portfolio-ready application case study to demonstrate how I structure complex frontend interfaces with reusable components and clear state management.`,
+    fr: `${title} est un concept d'application ${domain} axé sur des parcours utilisateurs clairs, des tableaux de bord responsives et des workflows métier pratiques. Je l'ai créé comme étude de cas portfolio pour montrer comment je structure des interfaces frontend complexes avec des composants réutilisables et une gestion d'état claire.`,
+    vi: `${title} là một concept ứng dụng ${domain}, tập trung vào luồng người dùng rõ ràng, dashboard responsive và các workflow thực tế cho business. Tôi tạo dự án này như một case study portfolio để thể hiện cách tôi tổ chức frontend phức tạp bằng component tái sử dụng và state management rõ ràng.`
+  },
+  stacks,
+  imgs: [img, img, img, img],
+  purposeAndGoal: {
+    en: `The goal was to design a polished application experience that helps users complete key tasks faster while keeping dense information easy to scan. The project highlights ${outcome}.`,
+    fr: `L'objectif était de concevoir une expérience applicative soignée qui aide les utilisateurs à accomplir leurs tâches plus rapidement tout en rendant les informations denses faciles à lire. Le projet met en avant ${outcome}.`,
+    vi: `Mục tiêu là thiết kế một trải nghiệm ứng dụng chỉn chu, giúp người dùng hoàn thành tác vụ nhanh hơn trong khi vẫn dễ đọc các thông tin dày đặc. Dự án nhấn mạnh ${outcome}.`
+  },
+  explanation: {
+    en: `I structured the UI around modular React components, typed data models, and responsive layouts. The interface balances overview screens, detail panels, filters, and analytics so the product feels practical for daily use.`,
+    fr: `J'ai structuré l'interface avec des composants React modulaires, des modèles de données typés et des layouts responsives. L'interface équilibre les vues d'ensemble, les panneaux de détail, les filtres et l'analytique pour donner au produit un usage quotidien fluide.`,
+    vi: `Tôi tổ chức UI bằng các React component có tính module, data model có type rõ ràng và layout responsive. Giao diện cân bằng giữa màn hình tổng quan, panel chi tiết, bộ lọc và analytics để sản phẩm có cảm giác thực dụng khi dùng hằng ngày.`
+  },
+  problems: {
+    en: `The main challenge was presenting many data points without overwhelming the user. I solved it by grouping information by priority, keeping actions close to context, and making important states visible at a glance.`,
+    fr: `Le principal défi était de présenter beaucoup de données sans surcharger l'utilisateur. Je l'ai résolu en regroupant les informations par priorité, en gardant les actions proches du contexte et en rendant les états importants visibles rapidement.`,
+    vi: `Thách thức chính là trình bày nhiều dữ liệu mà không làm người dùng bị quá tải. Tôi xử lý bằng cách nhóm thông tin theo độ ưu tiên, đặt action gần đúng ngữ cảnh và làm các trạng thái quan trọng dễ nhận ra ngay.`
+  },
+  lessons: {
+    en: `This project strengthened my approach to building dashboard-heavy applications: start from user decisions, define reusable UI patterns, and keep performance in mind as screens become more data-rich.`,
+    fr: `Ce projet a renforcé mon approche pour construire des applications riches en tableaux de bord : partir des décisions utilisateur, définir des patterns UI réutilisables et garder la performance en tête lorsque les écrans deviennent plus chargés en données.`,
+    vi: `Dự án này giúp tôi củng cố cách xây dựng các ứng dụng nhiều dashboard: bắt đầu từ quyết định của người dùng, định nghĩa pattern UI tái sử dụng và luôn chú ý hiệu suất khi màn hình ngày càng nhiều dữ liệu.`
+  },
+  stackImg: img
+});
+
 
 export const projects: { [key: string]: Project} = {
   'immoscout24': {
@@ -158,6 +215,116 @@ export const projects: { [key: string]: Project} = {
     },
     stackImg: "/prettcf_stack.png"
   },
+  'pulsecrm': createApplicationProject({
+    id: 4,
+    slug: "pulsecrm",
+    type: "SaaS Application",
+    title: "PulseCRM - Customer relationship management platform",
+    img: "/project-assets/pulsecrm.png",
+    link: "https://example.com/pulsecrm",
+    domain: "CRM",
+    outcome: "pipeline visibility, customer follow-up workflows, and revenue tracking",
+    stacks: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zustand", "Recharts"],
+  }),
+  'fintrack': createApplicationProject({
+    id: 5,
+    slug: "fintrack",
+    type: "Finance Application",
+    title: "FinTrack - Personal finance and budgeting app",
+    img: "/project-assets/fintrack.png",
+    link: "https://example.com/fintrack",
+    domain: "finance",
+    outcome: "budget planning, spending analytics, and savings goal tracking",
+    stacks: ["React", "TypeScript", "Redux Toolkit", "Chart.js", "Tailwind CSS", "Node.js"],
+  }),
+  'carebridge': createApplicationProject({
+    id: 6,
+    slug: "carebridge",
+    type: "Healthcare Application",
+    title: "CareBridge - Telehealth patient portal",
+    img: "/project-assets/carebridge.png",
+    link: "https://example.com/carebridge",
+    domain: "healthcare",
+    outcome: "appointment scheduling, care summaries, and patient communication",
+    stacks: ["Next.js", "React", "TypeScript", "GraphQL", "Tailwind CSS", "Prisma"],
+  }),
+  'learnloop': createApplicationProject({
+    id: 7,
+    slug: "learnloop",
+    type: "Education Application",
+    title: "LearnLoop - Online learning dashboard",
+    img: "/project-assets/learnloop.png",
+    link: "https://example.com/learnloop",
+    domain: "education",
+    outcome: "course progress, lesson planning, quizzes, and learning analytics",
+    stacks: ["React", "Next.js", "TypeScript", "SASS", "Node.js", "PostgreSQL"],
+  }),
+  'shopvista': createApplicationProject({
+    id: 8,
+    slug: "shopvista",
+    type: "E-commerce Application",
+    title: "ShopVista - Commerce operations manager",
+    img: "/project-assets/shopvista.png",
+    link: "https://example.com/shopvista",
+    domain: "e-commerce",
+    outcome: "product management, order monitoring, inventory alerts, and sales insights",
+    stacks: ["Next.js", "React", "TypeScript", "Redux", "Stripe", "Tailwind CSS"],
+  }),
+  'fleetops': createApplicationProject({
+    id: 9,
+    slug: "fleetops",
+    type: "Logistics Application",
+    title: "FleetOps - Delivery fleet management platform",
+    img: "/project-assets/fleetops.png",
+    link: "https://example.com/fleetops",
+    domain: "logistics",
+    outcome: "route planning, dispatch operations, live fleet status, and delivery KPIs",
+    stacks: ["React", "TypeScript", "Mapbox", "Node.js", "Express", "Tailwind CSS"],
+  }),
+  'stayfinder': createApplicationProject({
+    id: 10,
+    slug: "stayfinder",
+    type: "Travel Application",
+    title: "StayFinder - Hotel and rental booking platform",
+    img: "/project-assets/stayfinder.png",
+    link: "https://example.com/stayfinder",
+    domain: "travel booking",
+    outcome: "property discovery, comparison filters, booking summaries, and map browsing",
+    stacks: ["Next.js", "React", "TypeScript", "ElasticSearch", "Tailwind CSS", "Node.js"],
+  }),
+  'tableflow': createApplicationProject({
+    id: 11,
+    slug: "tableflow",
+    type: "Hospitality Application",
+    title: "TableFlow - Restaurant reservation and kitchen platform",
+    img: "/project-assets/tableflow.png",
+    link: "https://example.com/tableflow",
+    domain: "hospitality",
+    outcome: "reservation planning, table status visibility, kitchen queues, and daily analytics",
+    stacks: ["React", "TypeScript", "Redux Toolkit", "SASS", "Node.js", "Socket.IO"],
+  }),
+  'sprintboard': createApplicationProject({
+    id: 12,
+    slug: "sprintboard",
+    type: "Productivity Application",
+    title: "SprintBoard - Agile planning and team collaboration tool",
+    img: "/project-assets/sprintboard.png",
+    link: "https://example.com/sprintboard",
+    domain: "project management",
+    outcome: "sprint planning, issue tracking, team workload, and release visibility",
+    stacks: ["Next.js", "React", "TypeScript", "DnD Kit", "Tailwind CSS", "PostgreSQL"],
+  }),
+  'contentpilot': createApplicationProject({
+    id: 13,
+    slug: "contentpilot",
+    type: "Marketing Application",
+    title: "ContentPilot - AI content calendar and publishing platform",
+    img: "/project-assets/contentpilot.png",
+    link: "https://example.com/contentpilot",
+    domain: "marketing",
+    outcome: "campaign planning, editorial calendars, content drafts, and performance reporting",
+    stacks: ["React", "Next.js", "TypeScript", "OpenAI API", "Tailwind CSS", "Vercel"],
+  }),
 }
 
 export const socialMedia = [
