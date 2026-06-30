@@ -126,9 +126,14 @@
     .section {
         @apply mx-[15px] lg:mx-[30px];
     }
+    .site-shell {
+        width: 100%;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
     .container {
         text-align: center;
-        @apply mx-auto w-full max-w-[1140px] md:text-left;
+        @apply mx-auto w-full max-w-[1200px] md:text-left;
     }
     .is-hero-revealing {
         overflow: hidden;

@@ -44,10 +44,12 @@ export default async function RootLayout({
             attribute="class"
             disableTransitionOnChange={false}
           >
-            <Header />
-            {children}
-            <ContactBox />
-            <Footer />
+            <div className="site-shell">
+              <Header />
+              {children}
+              <ContactBox />
+              <Footer />
+            </div>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
