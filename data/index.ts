@@ -178,7 +178,7 @@ export const projects: { [key: string]: Project} = {
     stackImg: "/prettcf_stack.png"
   },
   'datvangphuquoc': {
-    id: 2,
+    id: 3,
     type: "Full-Stack engineer",
     title: "The real estate e-commerce platform of Phu Quoc island, Vietnam",
     img: "/p2.svg",
