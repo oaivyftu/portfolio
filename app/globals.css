@@ -258,7 +258,7 @@
     }
     .works-grid {
         @apply mb-[80px] gap-[30px] flex flex-col;
-        @apply lg:grid lg:grid-cols-[1.5fr,1fr,1.5fr] lg:grid-rows-[auto,auto];
+        @apply lg:grid lg:grid-cols-3 lg:grid-rows-none;
     }
     .about-intro-grid {
         @apply flex flex-col lg:grid lg:grid-rows-[auto] lg:grid-cols-[1fr,2fr] lg:gap-x-[80px] gap-y-[30px];
