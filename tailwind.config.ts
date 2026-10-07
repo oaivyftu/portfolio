@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         primary: '#1a1b1f',
         secondary: '#32343a',
+        accent: '#5b6cff',
+        'accent-hover': '#4655e0',
       },
       keyframes: {
         'fade-in': {
@@ -22,7 +24,7 @@ module.exports = {
         },
         'slide-in': {
           '0%': { transform: 'translateY(-10px)' },
-          '100%': { opacity: 'translateY(0px)' },
+          '100%': { transform: 'translateY(0px)' },
         },
         'slide-out': {
           '0%': { transform: 'translateY(0px)' },

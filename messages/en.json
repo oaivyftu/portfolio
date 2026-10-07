@@ -1,42 +1,232 @@
 {
   "header": {
-    "home": "Home",
-    "about": "About"
+    "services": "Services",
+    "process": "Process",
+    "caseStudies": "Case studies",
+    "about": "About",
+    "cta": "Get in touch",
+    "language": "Language"
   },
   "hero": {
-    "role": "FullStack Software Engineer",
-    "description": "Hey there! I'm a bilingual \uD83C\uDDEC\uD83C\uDDE7 \uD83C\uDDEB\uD83C\uDDF7 full-stack software engineer based in Ontario, Canada \uD83C\uDDE8\uD83C\uDDE6"
+    "eyebrow": "Software studio · Web · Mobile · Cloud · Consulting",
+    "title": "Software solutions and consulting for ambitious teams",
+    "description": "Vincent Studio Company helps startups and growing businesses plan, build and ship reliable web and mobile products — from the first idea to production and beyond.",
+    "primaryCta": "Book a free consultation",
+    "secondaryCta": "View case studies"
   },
-  "recentProjects": {
-    "title": "What I've been working on",
-    "description": "Most of the projects I’ve worked on were either internal or short-term MVPs aimed at attracting investment, so they are not publicly accessible. However, I’m excited to share one public project along with a few personal side projects that reflect my skills and experience.",
-    "viewMore": "View more"
+  "tech": {
+    "label": "Technologies we build with"
   },
-  "myExperiences": {
-    "title": "My experiences",
-    "description": "I’m a full-stack software engineer with 12+ years of experience building fast, user-friendly web applications with international teams."
+  "services": {
+    "label": "What we do",
+    "title": "End-to-end software services",
+    "description": "Whether you need a new product, a rescue for an existing one or an expert second opinion, we cover the full lifecycle.",
+    "items": {
+      "web": {
+        "title": "Web application development",
+        "description": "Custom web apps, portals, marketplaces and internal tools, built with modern, maintainable stacks and a focus on performance."
+      },
+      "mobile": {
+        "title": "Mobile and cross-platform apps",
+        "description": "Responsive, app-like experiences that work smoothly on every device, from the first prototype to a polished release."
+      },
+      "design": {
+        "title": "Product and UX design",
+        "description": "Research-informed user flows, interface design and design systems that turn business goals into products people enjoy using."
+      },
+      "cloud": {
+        "title": "Cloud and DevOps",
+        "description": "Cloud setup, CI/CD pipelines and monitoring so your product ships often, scales safely and stays online."
+      },
+      "consulting": {
+        "title": "Technical consulting",
+        "description": "Architecture reviews, technology selection, code audits and roadmap planning to help you make the right call before you build."
+      },
+      "support": {
+        "title": "Maintenance and support",
+        "description": "Ongoing improvements, bug fixes and performance tuning, so your software keeps delivering value after launch."
+      }
+    }
   },
-  "contactBox": {
-    "title": "Want to work together?",
-    "description": "Feel free to reach out if you're looking for a developer, have a question, or just want to connect"
+  "process": {
+    "label": "How we work",
+    "title": "A clear process from idea to launch",
+    "description": "Five predictable steps, regular demos and no surprises.",
+    "steps": {
+      "discover": {
+        "title": "Discover",
+        "description": "We learn your business, users and constraints, then define goals, scope and success measures together."
+      },
+      "design": {
+        "title": "Design",
+        "description": "We map user journeys, prototype the key screens and agree on architecture before writing production code."
+      },
+      "build": {
+        "title": "Build",
+        "description": "We develop in short iterations with working demos, code reviews and automated checks along the way."
+      },
+      "launch": {
+        "title": "Launch",
+        "description": "We test, optimise and release with a clear rollout plan, then hand over documentation and access."
+      },
+      "support": {
+        "title": "Support",
+        "description": "We monitor, maintain and evolve the product as your users and your business grow."
+      }
+    }
+  },
+  "caseStudies": {
+    "label": "Case studies",
+    "title": "Selected work",
+    "description": "A look at the products we have designed and built, from live platforms to product concepts that show how we approach new domains.",
+    "viewAll": "View all case studies",
+    "viewCase": "Read case study",
+    "delivered": "Delivered project",
+    "concept": "Product concept",
+    "pageTitle": "Case studies",
+    "pageDescription": "Real platforms we have shipped and in-house product concepts that show how we turn domain knowledge into working software.",
+    "deliveredTitle": "Delivered projects",
+    "conceptTitle": "Product concepts and R&D",
+    "conceptDescription": "Self-initiated products where we explore new domains, test ideas and sharpen our approach."
+  },
+  "whyUs": {
+    "label": "Why Vincent Studio",
+    "title": "A senior team that treats your product as its own",
+    "description": "You work directly with the engineers who build your product, with clear communication at every step.",
+    "stats": {
+      "experience": {
+        "value": "12+",
+        "label": "Years of hands-on software engineering"
+      },
+      "team": {
+        "value": "40+",
+        "label": "People on the largest distributed team we have worked with"
+      },
+      "languages": {
+        "value": "EN · FR",
+        "label": "Bilingual communication and delivery"
+      },
+      "caseStudies": {
+        "value": "13",
+        "label": "Case studies, from live platforms to concepts"
+      }
+    },
+    "points": {
+      "senior": {
+        "title": "Senior, hands-on engineering",
+        "description": "The people you talk to are the people who design and build your product."
+      },
+      "transparent": {
+        "title": "Transparent scope and progress",
+        "description": "Clear milestones, regular demos and honest estimates, so you always know where the project stands."
+      },
+      "bilingual": {
+        "title": "English and French",
+        "description": "We work comfortably with teams and customers in both languages."
+      },
+      "handover": {
+        "title": "Maintainable by design",
+        "description": "Clean, documented, well-tested code that your team can own, extend and hand over."
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions we often hear",
+    "items": {
+      "projects": {
+        "question": "What kind of projects do you take on?",
+        "answer": "We build web platforms, marketplaces, dashboards, internal tools and customer portals, and we advise teams on architecture, technology choices and delivery. If you are unsure whether we are the right fit, tell us about your goals and we will say so honestly."
+      },
+      "timeline": {
+        "question": "How long does it take to build an MVP?",
+        "answer": "It depends on scope. After a discovery call we agree on a prioritised feature set and give you a realistic timeline, typically measured in weeks rather than months for a focused MVP."
+      },
+      "pricing": {
+        "question": "How do you price your work?",
+        "answer": "We offer fixed-scope pricing for well-defined work and time-and-materials for evolving products. After the discovery call we recommend the model that fits your situation and share a clear estimate."
+      },
+      "existing": {
+        "question": "Can you work with our existing codebase or team?",
+        "answer": "Yes. We regularly join existing products and teams to audit code, add features, improve performance and pay down technical debt, and we follow your conventions and workflow."
+      },
+      "afterLaunch": {
+        "question": "What happens after launch?",
+        "answer": "We can stay on for monitoring, maintenance and new features, or hand everything over with documentation so your team can take it from there."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's build something together",
+    "description": "Tell us about your product, your challenge or your idea. We will get back to you promptly with next steps.",
+    "button": "Book a free consultation",
+    "mailSubject": "Project enquiry",
+    "secondary": "Or write to"
   },
   "footer": {
-    "copyright": "This website is made with coffee and milk tea by"
+    "description": "A software studio delivering solutions and consulting for startups and growing businesses.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
   },
   "about": {
-    "label": "hey there!",
-    "title": "I'm Vincent Le",
-    "description": "With over 12+ years of experience in fullstack web development, I specialize in building responsive websites and web apps using modern web standards like ReactJs, TailwindCSS, NodeJs, etc. I enjoy solving design challenges with clean code and great UX. My mission is to build interfaces that not only work flawlessly but also bring joy to users."
+    "label": "About us",
+    "title": "A software studio built on senior engineering",
+    "description": "Vincent Studio Company designs, builds and supports software for startups and growing businesses. We combine more than a decade of hands-on engineering with a simple belief: good software comes from understanding the business first, then choosing the simplest technology that solves the problem.",
+    "founder": {
+      "label": "Founder",
+      "name": "Vincent Le",
+      "role": "Founder and Lead Engineer",
+      "note": "With over 12 years of experience in full-stack web development, I have worked on everything from large international platforms to products I built and launched on my own. I started Vincent Studio Company to bring that experience to teams that want a reliable technical partner. I enjoy solving design challenges with clean code and great UX, and I care about building interfaces that work flawlessly and bring joy to the people who use them."
+    },
+    "values": {
+      "title": "How we think",
+      "items": {
+        "quality": {
+          "title": "Quality you can see",
+          "description": "Clean code, accessible interfaces and careful details, because users notice."
+        },
+        "clarity": {
+          "title": "Clarity over jargon",
+          "description": "Plain-language proposals, honest estimates and decisions explained, not hidden."
+        },
+        "ownership": {
+          "title": "Ownership",
+          "description": "We treat your product as our own and flag risks early instead of waiting to be asked."
+        },
+        "partnership": {
+          "title": "Long-term partnership",
+          "description": "We aim to be the technical team you want to keep working with after launch."
+        }
+      }
+    },
+    "stack": {
+      "title": "Our toolbox",
+      "description": "We choose technology to fit your product, not the other way round. These are some of the tools we use most."
+    }
   },
-  "mySkills": {
-    "title": "My Skills",
-    "description": "Aparts from skills below, I've been taking a number of online courses such as Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (for frontend). I'm also cloning some famous sites like stackoverflow, jira, spotify, ..."
+  "project": {
+    "back": "All case studies",
+    "industry": "Industry",
+    "services": "Services",
+    "stack": "Technology",
+    "live": "Live site",
+    "viewsite": "Visit website",
+    "challenge": "The challenge",
+    "solution": "Our solution",
+    "results": "Results",
+    "ctaTitle": "Have a similar project in mind?",
+    "ctaDescription": "Let's talk about how we can help you plan, build and launch it.",
+    "ctaButton": "Start a conversation"
   },
-  "projects": {
-    "viewsite": "View Site",
-    "purporseandgoal": "Project Purpose and Goal",
-    "webstack": "Web Stack and Explanation",
-    "problems": "Problems and Thought Process",
-    "lessons": "Lessons Learned"
+  "seo": {
+    "title": "Vincent Studio Company — Software solutions and consulting",
+    "description": "Vincent Studio Company is a software studio offering web and mobile development, product design, cloud and DevOps, and technical consulting for startups and growing businesses.",
+    "aboutTitle": "About us",
+    "aboutDescription": "Meet the software studio behind Vincent Studio Company: senior engineering, clear communication and a long-term approach to your product.",
+    "projectsTitle": "Case studies",
+    "projectsDescription": "Explore the platforms and product concepts designed and built by Vincent Studio Company."
   }
 }

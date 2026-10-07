@@ -7,6 +7,7 @@ import { usePathname, Link } from "@/i18n/navigation"
 import Portal from "@/components/ui/Portal";
 import Hamburger from "@/components/ui/Hamburger";
 import {FaChevronDown} from "react-icons/fa";
+import {siteConfig} from "@/data/site";
 
 interface Position {
   left: number;
@@ -22,7 +23,7 @@ const Header = ({ }) => {
   const menuButtonRef = useRef<HTMLButtonElement>(null)
   const pathname = usePathname();
   const [isOpenMenu, setOpenMenu] = useState<boolean>(false);
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
   const [openLocalMenu, setOpenLocalMenu] = useState(false);
   const [isClosing, setIsClosing] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null); // thêm ref này
@@ -134,10 +135,10 @@ const Header = ({ }) => {
                   "animate-fade-out": isClosing
                 })}>
                   <ul>
-                    <li><Link href="/" locale="en"
+                    <li><Link href={pathname} locale="en"
                               className={cn("navigation-item locale-nav-item", {"w--current": locale === "en"})}>EN</Link>
                     </li>
-                    <li><Link href="/" locale="fr"
+                    <li><Link href={pathname} locale="fr"
                               className={cn("navigation-item locale-nav-item", {"w--current": locale === "fr"})}>FR</Link>
                     </li>
                   </ul>
@@ -147,9 +148,12 @@ const Header = ({ }) => {
           </div>
         </Portal>
       )}
-      <div className="sticky z-[5] top-0 mx-auto px-[50px] py-[30px] w-full flex justify-between items-center bg-white dark:bg-black">
+      <div className="sticky z-[5] top-0 mx-auto px-[24px] xl:px-[50px] py-[30px] w-full flex justify-between items-center bg-white dark:bg-black">
         <div className="logo" aria-label="Home">
-          <Link href="/" className="uppercase text-[26px] leading-normal no-underline font-bold">vincent le</Link>
+          <Link href="/" className="flex items-center gap-3 whitespace-nowrap uppercase text-[20px] leading-normal no-underline font-bold">
+            <span className="inline-flex items-center justify-center w-[36px] h-[36px] bg-accent text-white text-[14px] tracking-[1px]">{siteConfig.monogram}</span>
+            {siteConfig.shortName}
+          </Link>
         </div>
         <nav role="navigation" className="mr-[-20px] items-center none hidden lg:flex">
           <ul className="flex justify-between items-center">
@@ -162,9 +166,13 @@ const Header = ({ }) => {
                 <FaChevronDown className="ml-[4px]" />
               </button>
             </li>
-            <li><Link href="/" className={cn("navigation-item", {"w--current": isActive("/")})}>{t('home')}</Link></li>
+            <li><Link href="/#services" className="navigation-item">{t('services')}</Link></li>
+            <li><Link href="/#process" className="navigation-item">{t('process')}</Link></li>
+            <li><Link href="/projects"
+                      className={cn("navigation-item", {"w--current": isActive("/projects")})}>{t('caseStudies')}</Link></li>
             <li><Link href="/about"
                       className={cn("navigation-item", {"w--current": isActive("/about")})}>{t('about')}</Link></li>
+            <li className="mx-[10px]"><Link href="/#contact" className="button button-accent">{t('cta')}</Link></li>
             <li><ThemeToggle /></li>
           </ul>
         </nav>
@@ -193,11 +201,13 @@ const Header = ({ }) => {
                 "animate-fade-out": isClosing
               })}>
               <ul>
-                <li><Link href="/" className={cn("navigation-item", { "w--current": isActive("/") })} >{t('home')}</Link></li>
+                <li><Link href="/#services" className="navigation-item">{t('services')}</Link></li>
+                <li><Link href="/#process" className="navigation-item">{t('process')}</Link></li>
+                <li><Link href="/projects" className={cn("navigation-item", { "w--current": isActive("/projects") })}>{t('caseStudies')}</Link></li>
                 <li><Link href="/about" className={cn("navigation-item", { "w--current": isActive("/about") })}>{t('about')}</Link></li>
-                <li><Link href="/" locale="en" className={cn("navigation-item", { "w--current": locale === "en"})}>EN</Link></li>
-                <li><Link href="/" locale="fr" className={cn("navigation-item", { "w--current": locale === "fr"})}>FR</Link></li>
-                <li><Link href="/" locale="vi" className={cn("navigation-item", { "w--current": locale === "vi"})}>VI</Link></li>
+                <li><Link href="/#contact" className="navigation-item w--current">{t('cta')}</Link></li>
+                <li><Link href={pathname} locale="en" className={cn("navigation-item", { "w--current": locale === "en"})}>EN</Link></li>
+                <li><Link href={pathname} locale="fr" className={cn("navigation-item", { "w--current": locale === "fr"})}>FR</Link></li>
               </ul>
             </nav>
           </div>

@@ -2,12 +2,13 @@
 
 import {useEffect, useState} from "react";
 import type {CSSProperties} from "react";
+import {siteConfig} from "@/data/site";
 
 const codeRows = [
-  "const craft = ['react', 'motion', 'ux'];",
-  "deploy({ polish: true, latency: 'low' });",
-  "interface Portfolio { memorable: boolean }",
-  "render(<VincentLe />);",
+  "const studio = ['strategy', 'design', 'engineering'];",
+  "deploy({ quality: 'high', downtime: 0 });",
+  "interface Product { shipped: boolean }",
+  "render(<VincentStudio />);",
 ];
 
 export default function HeroReveal() {
@@ -55,7 +56,7 @@ export default function HeroReveal() {
     <div className="hero-reveal" aria-hidden="true">
       <div className="hero-reveal__scan" />
       <div className="hero-reveal__mark">
-        <span>VL</span>
+        <span>{siteConfig.monogram}</span>
       </div>
       <div className="hero-reveal__code" aria-hidden="true">
         {codeRows.map((row, index) => (
