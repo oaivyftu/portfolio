@@ -1,42 +1,232 @@
 {
   "header": {
-    "home": "Accueil",
-    "about": "À propos"
+    "services": "Services",
+    "process": "Méthode",
+    "caseStudies": "Études de cas",
+    "about": "À propos",
+    "cta": "Nous contacter",
+    "language": "Langue"
   },
   "hero": {
-    "role": "Ingénieur FullStack",
-    "description": "Bonjour ! Je suis un ingénieur full-stack bilingue 🇬🇧 🇫🇷 basé en Ontario, Canada 🇨🇦"
+    "eyebrow": "Studio logiciel · Web · Mobile · Cloud · Conseil",
+    "title": "Solutions logicielles et conseil pour les équipes ambitieuses",
+    "description": "Vincent Studio Company aide les startups et les entreprises en croissance à concevoir, développer et livrer des produits web et mobiles fiables — de la première idée à la mise en production et au-delà.",
+    "primaryCta": "Réserver une consultation gratuite",
+    "secondaryCta": "Voir les études de cas"
   },
-  "recentProjects": {
-    "title": "Ce sur quoi j'ai travaillé",
-    "description": "La plupart des projets sur lesquels j’ai travaillé étaient soit internes, soit des MVP à court terme visant à attirer des investissements, donc ils ne sont pas accessibles au public. Cependant, je suis ravi de partager un projet public ainsi que quelques projets personnels qui reflètent mes compétences et mon expérience.",
-    "viewMore": "Voir plus"
+  "tech": {
+    "label": "Technologies que nous utilisons"
   },
-  "myExperiences": {
-    "title": "Mes expériences",
-    "description": "Je suis un ingénieur logiciel full-stack avec plus de 12 ans d’expérience, développant des applications web rapides et faciles à utiliser avec des équipes internationales."
+  "services": {
+    "label": "Ce que nous faisons",
+    "title": "Des services logiciels de bout en bout",
+    "description": "Nouveau produit, sauvetage d'un produit existant ou second avis d'expert : nous couvrons tout le cycle de vie.",
+    "items": {
+      "web": {
+        "title": "Développement d'applications web",
+        "description": "Applications web sur mesure, portails, places de marché et outils internes, construits avec des stacks modernes et maintenables, avec un souci de performance."
+      },
+      "mobile": {
+        "title": "Applications mobiles et multiplateformes",
+        "description": "Des expériences responsives, proches d'une application native, qui fonctionnent sur tous les appareils, du premier prototype à la version finale soignée."
+      },
+      "design": {
+        "title": "Design produit et UX",
+        "description": "Parcours utilisateurs, design d'interface et design systems qui transforment vos objectifs métier en produits agréables à utiliser."
+      },
+      "cloud": {
+        "title": "Cloud et DevOps",
+        "description": "Mise en place du cloud, pipelines CI/CD et supervision pour que votre produit soit livré souvent, évolue sereinement et reste disponible."
+      },
+      "consulting": {
+        "title": "Conseil technique",
+        "description": "Revue d'architecture, choix technologiques, audit de code et feuille de route pour prendre les bonnes décisions avant de développer."
+      },
+      "support": {
+        "title": "Maintenance et support",
+        "description": "Améliorations continues, corrections de bugs et optimisation des performances pour que votre logiciel continue à créer de la valeur après le lancement."
+      }
+    }
   },
-  "contactBox": {
-    "title": "Envie de collaborer ?",
-    "description": "N'hésitez pas à me contacter si vous recherchez un développeur, avez une question ou souhaitez simplement échanger."
+  "process": {
+    "label": "Notre méthode",
+    "title": "Un processus clair, de l'idée au lancement",
+    "description": "Cinq étapes prévisibles, des démonstrations régulières et aucune mauvaise surprise.",
+    "steps": {
+      "discover": {
+        "title": "Découvrir",
+        "description": "Nous comprenons votre métier, vos utilisateurs et vos contraintes, puis définissons ensemble les objectifs, le périmètre et les indicateurs de succès."
+      },
+      "design": {
+        "title": "Concevoir",
+        "description": "Nous cartographions les parcours, prototypons les écrans clés et validons l'architecture avant d'écrire le code de production."
+      },
+      "build": {
+        "title": "Développer",
+        "description": "Nous développons par itérations courtes, avec des démonstrations fonctionnelles, des revues de code et des contrôles automatisés."
+      },
+      "launch": {
+        "title": "Lancer",
+        "description": "Nous testons, optimisons et déployons selon un plan de mise en production clair, puis remettons documentation et accès."
+      },
+      "support": {
+        "title": "Accompagner",
+        "description": "Nous supervisons, maintenons et faisons évoluer le produit au rythme de vos utilisateurs et de votre activité."
+      }
+    }
+  },
+  "caseStudies": {
+    "label": "Études de cas",
+    "title": "Réalisations choisies",
+    "description": "Un aperçu des produits que nous avons conçus et développés, des plateformes en ligne aux concepts de produits qui illustrent notre approche de nouveaux secteurs.",
+    "viewAll": "Voir toutes les études de cas",
+    "viewCase": "Lire l'étude de cas",
+    "delivered": "Projet livré",
+    "concept": "Concept de produit",
+    "pageTitle": "Études de cas",
+    "pageDescription": "Des plateformes réelles que nous avons livrées et des concepts de produits internes qui montrent comment nous transformons la connaissance métier en logiciel fonctionnel.",
+    "deliveredTitle": "Projets livrés",
+    "conceptTitle": "Concepts de produits et R&D",
+    "conceptDescription": "Des produits que nous initions nous-mêmes pour explorer de nouveaux secteurs, tester des idées et affiner notre approche."
+  },
+  "whyUs": {
+    "label": "Pourquoi Vincent Studio",
+    "title": "Une équipe senior qui traite votre produit comme le sien",
+    "description": "Vous travaillez directement avec les ingénieurs qui construisent votre produit, avec une communication claire à chaque étape.",
+    "stats": {
+      "experience": {
+        "value": "12+",
+        "label": "Années d'ingénierie logicielle sur le terrain"
+      },
+      "team": {
+        "value": "40+",
+        "label": "Personnes dans la plus grande équipe distribuée avec laquelle nous avons travaillé"
+      },
+      "languages": {
+        "value": "EN · FR",
+        "label": "Communication et livraison bilingues"
+      },
+      "caseStudies": {
+        "value": "13",
+        "label": "Études de cas, des plateformes en ligne aux concepts"
+      }
+    },
+    "points": {
+      "senior": {
+        "title": "Ingénierie senior, au plus près du code",
+        "description": "Les personnes avec qui vous échangez sont celles qui conçoivent et construisent votre produit."
+      },
+      "transparent": {
+        "title": "Périmètre et avancement transparents",
+        "description": "Des jalons clairs, des démonstrations régulières et des estimations honnêtes : vous savez toujours où en est le projet."
+      },
+      "bilingual": {
+        "title": "Anglais et français",
+        "description": "Nous travaillons aisément avec des équipes et des clients dans les deux langues."
+      },
+      "handover": {
+        "title": "Maintenable par conception",
+        "description": "Un code propre, documenté et bien testé, que votre équipe peut s'approprier, faire évoluer et transmettre."
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Les questions que l'on nous pose souvent",
+    "items": {
+      "projects": {
+        "question": "Quels types de projets acceptez-vous ?",
+        "answer": "Nous construisons des plateformes web, des places de marché, des tableaux de bord, des outils internes et des portails clients, et nous conseillons les équipes sur l'architecture, les choix technologiques et la livraison. Si vous hésitez sur notre adéquation, parlez-nous de vos objectifs et nous vous répondrons honnêtement."
+      },
+      "timeline": {
+        "question": "Combien de temps faut-il pour développer un MVP ?",
+        "answer": "Cela dépend du périmètre. Après un appel de découverte, nous convenons d'un ensemble de fonctionnalités priorisées et vous donnons un calendrier réaliste, généralement exprimé en semaines plutôt qu'en mois pour un MVP ciblé."
+      },
+      "pricing": {
+        "question": "Comment tarifez-vous votre travail ?",
+        "answer": "Nous proposons un forfait pour les travaux bien définis et une facturation au temps passé pour les produits qui évoluent. Après l'appel de découverte, nous recommandons le modèle adapté à votre situation et partageons une estimation claire."
+      },
+      "existing": {
+        "question": "Pouvez-vous travailler sur notre code ou avec notre équipe existants ?",
+        "answer": "Oui. Nous rejoignons régulièrement des produits et des équipes existants pour auditer le code, ajouter des fonctionnalités, améliorer les performances et réduire la dette technique, en respectant vos conventions et votre mode de travail."
+      },
+      "afterLaunch": {
+        "question": "Que se passe-t-il après le lancement ?",
+        "answer": "Nous pouvons rester pour la supervision, la maintenance et les nouvelles fonctionnalités, ou tout vous transmettre avec la documentation pour que votre équipe prenne le relais."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Construisons quelque chose ensemble",
+    "description": "Parlez-nous de votre produit, de votre défi ou de votre idée. Nous reviendrons rapidement vers vous avec les prochaines étapes.",
+    "button": "Réserver une consultation gratuite",
+    "mailSubject": "Demande de projet",
+    "secondary": "Ou écrivez à"
   },
   "footer": {
-    "copyright": "This website is made with coffee and milk tea by"
+    "description": "Un studio logiciel qui propose des solutions et du conseil aux startups et aux entreprises en croissance.",
+    "servicesTitle": "Services",
+    "companyTitle": "Entreprise",
+    "contactTitle": "Contact",
+    "rights": "Tous droits réservés."
   },
   "about": {
-    "label": "salut !",
-    "title": "Je suis Vincent Le",
-    "description": "Avec plus de 12 ans d’expérience en développement web full-stack, je me spécialise dans la création de sites et d’applications web responsives en utilisant des technologies modernes comme React.js, Tailwind CSS et Node.js. J’aime relever des défis de design avec un code propre et une excellente expérience utilisateur. Ma mission est de créer des interfaces qui fonctionnent parfaitement tout en apportant du plaisir aux utilisateurs."
+    "label": "À propos",
+    "title": "Un studio logiciel fondé sur l'ingénierie senior",
+    "description": "Vincent Studio Company conçoit, développe et accompagne des logiciels pour les startups et les entreprises en croissance. Nous combinons plus de dix ans d'ingénierie sur le terrain avec une conviction simple : un bon logiciel naît d'abord d'une bonne compréhension du métier, puis du choix de la technologie la plus simple qui résout le problème.",
+    "founder": {
+      "label": "Fondateur",
+      "name": "Vincent Le",
+      "role": "Fondateur et ingénieur principal",
+      "note": "Avec plus de 12 ans d'expérience en développement web full-stack, j'ai travaillé aussi bien sur de grandes plateformes internationales que sur des produits que j'ai construits et lancés seul. J'ai fondé Vincent Studio Company pour mettre cette expérience au service des équipes qui cherchent un partenaire technique fiable. J'aime relever des défis de design avec un code propre et une excellente UX, et je tiens à construire des interfaces qui fonctionnent sans faille et qui font plaisir à ceux qui les utilisent."
+    },
+    "values": {
+      "title": "Notre façon de penser",
+      "items": {
+        "quality": {
+          "title": "Une qualité visible",
+          "description": "Un code propre, des interfaces accessibles et des détails soignés, parce que les utilisateurs le remarquent."
+        },
+        "clarity": {
+          "title": "La clarté avant le jargon",
+          "description": "Des propositions en langage simple, des estimations honnêtes et des décisions expliquées, pas cachées."
+        },
+        "ownership": {
+          "title": "Responsabilité",
+          "description": "Nous traitons votre produit comme le nôtre et signalons les risques tôt, sans attendre qu'on nous le demande."
+        },
+        "partnership": {
+          "title": "Partenariat durable",
+          "description": "Nous voulons être l'équipe technique avec laquelle vous aurez envie de continuer après le lancement."
+        }
+      }
+    },
+    "stack": {
+      "title": "Notre boîte à outils",
+      "description": "Nous choisissons la technologie en fonction de votre produit, et non l'inverse. Voici quelques-uns des outils que nous utilisons le plus."
+    }
   },
-  "mySkills": {
-    "title": "Mes compétences",
-    "description": "En plus des compétences ci-dessous, je suis plusieurs cours en ligne tels que Google UX Design, MongoDB, Design System, Progressive Web App, Microfrontend, AngularJs, VueJs, DevOps (pour le frontend). Je reproduis aussi certains sites connus comme StackOverflow, Jira, Spotify, ..."
+  "project": {
+    "back": "Toutes les études de cas",
+    "industry": "Secteur",
+    "services": "Services",
+    "stack": "Technologies",
+    "live": "Site en ligne",
+    "viewsite": "Visiter le site",
+    "challenge": "Le défi",
+    "solution": "Notre solution",
+    "results": "Résultats",
+    "ctaTitle": "Un projet similaire en tête ?",
+    "ctaDescription": "Parlons de la façon dont nous pouvons vous aider à le concevoir, le développer et le lancer.",
+    "ctaButton": "Démarrer la conversation"
   },
-  "projects": {
-    "viewsite": "Voir le site",
-    "purporseandgoal": "Objectif et but du projet",
-    "webstack": "Stack technique et explications",
-    "problems": "Problèmes et processus de réflexion",
-    "lessons": "Leçons apprises"
+  "seo": {
+    "title": "Vincent Studio Company — Solutions logicielles et conseil",
+    "description": "Vincent Studio Company est un studio logiciel proposant développement web et mobile, design produit, cloud et DevOps, et conseil technique aux startups et aux entreprises en croissance.",
+    "aboutTitle": "À propos",
+    "aboutDescription": "Découvrez le studio logiciel derrière Vincent Studio Company : ingénierie senior, communication claire et approche durable de votre produit.",
+    "projectsTitle": "Études de cas",
+    "projectsDescription": "Découvrez les plateformes et concepts de produits conçus et développés par Vincent Studio Company."
   }
 }

@@ -1,8 +1,9 @@
 export type MultiLang = {
   en: string;
   fr: string;
-  vi: string;
 }
+
+export type ServiceKey = "web" | "mobile" | "design" | "cloud" | "consulting" | "support";
 
 export type Project = {
   id: string | number;
@@ -10,13 +11,14 @@ export type Project = {
   img: string;
   route: string;
   link: string;
+  kind: "delivered" | "concept";
+  industry: MultiLang;
+  services: ServiceKey[];
   desc: MultiLang;
   stacks: string[];
   imgs: string[];
-  purposeAndGoal: MultiLang;
-  explanation: MultiLang;
-  problems: MultiLang;
-  lessons: MultiLang;
+  challenge: MultiLang;
+  solution: MultiLang;
+  results: MultiLang;
   stackImg: string;
-  type: string;
 }

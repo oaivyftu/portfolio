@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
     body {
         @apply text-primary dark:text-white;
         line-height: 28px;
@@ -89,7 +92,7 @@
     .button {
         padding: 12px 25px;
         border-radius: 0px;
-        @apply bg-primary dark:bg-white text-white dark:text-primary hover:bg-secondary dark:hover:bg-primary hover:text-white dark:hover:text-secondary;
+        @apply inline-block text-center font-medium bg-primary dark:bg-white text-white dark:text-primary hover:bg-secondary dark:hover:bg-primary hover:text-white dark:hover:text-secondary;
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 2px;
@@ -101,6 +104,46 @@
         font-size: 14px;
         line-height: 26px;
     }
+    .button-accent {
+        @apply bg-accent text-white dark:bg-accent dark:text-white hover:bg-accent-hover hover:text-white dark:hover:bg-accent-hover dark:hover:text-white;
+    }
+    .button-outline {
+        @apply bg-transparent border border-solid border-primary/30 text-primary dark:bg-transparent dark:border-white/30 dark:text-white hover:bg-primary/5 hover:text-primary dark:hover:bg-white/10 dark:hover:text-white;
+    }
+    .accent-label {
+        @apply text-accent;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .card {
+        @apply border border-solid border-primary/10 dark:border-white/15 p-8 text-left;
+    }
+    .chip {
+        @apply inline-block border border-solid border-primary/15 dark:border-white/20 px-4 py-1 text-sm;
+        line-height: 24px;
+    }
+    .anchor-section {
+        scroll-margin-top: 110px;
+    }
+    .section-block {
+        @apply my-[80px] lg:my-[120px];
+    }
+    .faq-item summary {
+        @apply cursor-pointer list-none flex justify-between items-center gap-6 py-6 text-[18px] leading-[30px];
+    }
+    .faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+    .faq-item summary::after {
+        content: "+";
+        @apply text-accent text-[28px] leading-none transition-transform;
+    }
+    .faq-item[open] summary::after {
+        transform: rotate(45deg);
+    }
     .rich-text {
         width: 70%;
         @apply mx-auto mb-[100px];
@@ -111,7 +154,7 @@
         }
     }
     .navigation-item {
-        @apply no-underline px-[20px] py-[9px] text-xs leading-5 uppercase opacity-[0.6] transition-opacity text-center;
+        @apply no-underline px-[12px] xl:px-[20px] py-[9px] text-xs leading-5 uppercase opacity-[0.6] transition-opacity text-center whitespace-nowrap;
         font-weight: 500;
         color: #222222;
         letter-spacing: 1px;
@@ -264,27 +307,14 @@
         @apply flex flex-col lg:grid lg:grid-rows-[auto] lg:grid-cols-[1fr,2fr] lg:gap-x-[80px] gap-y-[30px];
         grid-template-areas: ". .";
     }
+    .card-grid {
+        @apply grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-3;
+    }
     .work-image {
         @apply h-[460px] mb-10 bg-cover bg-center hover:opacity-80 transition-opacity;
     }
     .work-description {
         @apply flex flex-col justify-center items-center;
-    }
-    .work-experience-grid {
-        @apply grid-cols-[1fr,1fr] gap-[30px];
-        grid-template-areas: ". .";
-        grid-template-rows: auto;
-        @apply lg:grid-cols-[1fr,1fr,1fr,1fr];
-    }
-    .skills-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: 80px;
-        grid-row-gap: 10px;
-        margin-bottom: 140px;
-        @screen md {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
     }
     ::view-transition-new(navigation-tip) {
         animation: navTipFlatten .3s;
